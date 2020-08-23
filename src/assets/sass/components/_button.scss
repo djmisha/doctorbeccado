@@ -28,7 +28,7 @@ button,
   cursor: pointer;
   display: inline-block;
   font-size: 0.8em;
-  font-weight: _font(weight-bold);
+  // font-weight: _font(weight-bold);
   height: 3em;
   letter-spacing: _font(letter-spacing);
   line-height: 3.05em;
@@ -37,7 +37,7 @@ button,
   text-align: center;
   text-decoration: none;
   text-overflow: ellipsis;
-  //   text-transform: uppercase;
+  text-transform: uppercase;
   white-space: nowrap;
 
   &.icon {

@@ -10,10 +10,16 @@ export default function Footer() {
       <div className="inner" id="schedule">
         <ContactForm />
         <section>
-          <h3>Office Location</h3>
-          <Link to="{config.locationLink}">{config.locationAddress}</Link>
-          <Link to="{config.locationPhoneLink}">{config.locationPhone}</Link>
-          <h3>Connect</h3>
+          <h4>Office Location</h4>
+          <div>{config.locationName}</div>
+          <div>
+            <Link to="{config.locationLink}">{config.locationAddress}</Link>
+          </div>
+          <div>
+            <Link to="{config.locationPhoneLink}">{config.locationPhone}</Link>
+          </div>
+          <br></br>
+          <h4>Connect with me!</h4>
           <ul className="icons">
             {config.socialLinks.map(social => {
               const { icon, name, url } = social;
@@ -33,7 +39,8 @@ export default function Footer() {
             reserved
           </li>
           <li>
-            Web Design by <a href="http://html5up.net">Asbury Media Group</a>
+            <a href="https://asburymediagroup.com">Web Design</a> by Asbury
+            Media Group
           </li>
         </ul>
       </div>

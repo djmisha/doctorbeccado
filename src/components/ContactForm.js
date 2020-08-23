@@ -20,7 +20,7 @@ export default function ContactForm() {
               type="text"
               name="preffereddate"
               id="preffereddate"
-              placeholder="Preffered Appt Date"
+              placeholder="Preffered Appointment Date"
             />
           </div>
           <div className="field">
