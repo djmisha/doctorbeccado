@@ -7,7 +7,7 @@ import { Link } from 'gatsby';
 export default function Footer() {
   return (
     <footer id="footer">
-      <div className="inner" id="schedule">
+      <div className="inner" id="request">
         <ContactForm />
         <section className="footer-location">
           <h4>Office Location</h4>

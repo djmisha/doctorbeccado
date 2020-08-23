@@ -2,9 +2,14 @@ import React from 'react';
 export default function ContactForm() {
   return (
     <section>
-      <h3>Schedule an Appointment</h3>
+      <h3>Request an Appointment</h3>
       <p>Fill out this contact form and you'll will recieve a call back.</p>
-      <form method="post" action="#">
+      <form
+        method="post"
+        // action="/success"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+      >
         <div className="fields">
           <div className="field half">
             <input type="text" name="name" id="name" placeholder="Name" />
