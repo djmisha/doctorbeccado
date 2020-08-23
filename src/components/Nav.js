@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import config from '../../config';
+import Location from './Location';
+import Social from './Social';
 
 export default function Nav({ onClose = () => {} }) {
   return (
@@ -18,19 +19,10 @@ export default function Nav({ onClose = () => {} }) {
             <a href="#request">Request Appointment</a>
           </li>
         </ul>
-
-        <ul className="icons">
-          {config.socialLinks.map(social => {
-            const { icon, name, url } = social;
-            return (
-              <li key={url}>
-                <a href={url} className={`icon ${icon}`}>
-                  <span className="label">{name}</span>
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+        <br></br>
+        <Social />
+        <br></br>
+        <Location />
       </div>
       <a
         className="close"
