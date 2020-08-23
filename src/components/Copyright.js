@@ -1,6 +1,5 @@
 import React from 'react';
 import config from '../../config';
-import { Link } from 'gatsby';
 
 export default function Copyright() {
   return (
