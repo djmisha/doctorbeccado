@@ -16,8 +16,8 @@ export default function Footer() {
           <br></br>
           <h4>Connect with me!</h4>
           <Social />
-          <Copyright />
         </section>
+        <Copyright />
       </div>
     </footer>
   );
