@@ -5,14 +5,11 @@ export default function Nav({ onClose = () => {} }) {
   return (
     <nav id="menu">
       <div className="inner">
-        <h2>Menu</h2>
+        {/* <p>Menu</p> */}
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
-          {/* <li>
-            <Link to="/Generic">About</Link>
-          </li> */}
           <li>
             <a href="#About">About</a>
           </li>

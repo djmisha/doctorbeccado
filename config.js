@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Rebeccah R. Rodriguez, DO', // <title>
   siteDescription:
-    'Family Medicine & Sports Medicine Physician located in San Diego, CA & Encinitas, CA ', // <title>
+    'Family Medicine & Sports Medicine Physician in Encinitas, CA ', // <title>
   locationName: 'OasisMD Lifestyle Healthcare',
   locationAddress: '8901 Activity Road, San Diego, CA 92126',
   locationLink:

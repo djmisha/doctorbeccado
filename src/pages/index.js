@@ -21,7 +21,7 @@ const IndexPage = () => (
     </div>
     <div id="main">
       <div className="inner">
-        <h1>Meet {config.siteTitle}</h1>
+        <h1 id="About">Meet {config.siteTitle}</h1>
         <p>
           <span className="image right">
             <img src={rebecca} alt="{config.siteTitle}" />

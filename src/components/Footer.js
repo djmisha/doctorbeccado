@@ -9,7 +9,7 @@ export default function Footer() {
     <footer id="footer">
       <div className="inner" id="schedule">
         <ContactForm />
-        <section>
+        <section className="footer-location">
           <h4>Office Location</h4>
           <div>{config.locationName}</div>
           <div>
