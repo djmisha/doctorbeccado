@@ -1,22 +1,22 @@
 module.exports = {
-  siteTitle: 'Gatsby Starter phantom', // <title>
-  manifestName: 'Phantom',
-  manifestShortName: 'Landing', // max 12 characters
+  siteTitle: 'Rebeccah R. Rodriguez, DO', // <title>
+  siteDescription: 'Family Health and Sport Medicine Doctor', // <title>
+  locationAddress: '2323 adfasdf Street',
+  locationLink: '#',
+  locationPhone: '555 555 5555',
+  locationPhoneLink: 'tel:+1 555 555 5555',
+  manifestName: 'Rebeccah',
+  manifestShortName: 'rebeccah', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/website-icon.svg',
   pathPrefix: `/gatsby-starter-phantom/`, // This path is subpath of your hosting https://domain/portfolio
-  heading: 'Anubhav Srivastava',
-  subHeading: 'Full time Web Developer. Part time Open source contributor  ',
+  heading: 'Rebeccah R. Rodriguez, DO',
+  subHeading: 'Family and Sport Medicine ',
   // social
   socialLinks: [
-    {
-      icon: 'fa-github',
-      name: 'Github',
-      url: 'https://github.com/anubhavsrivastava',
-    },
     {
       icon: 'fa-twitter',
       name: 'Twitter',

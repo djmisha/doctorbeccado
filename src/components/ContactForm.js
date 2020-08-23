@@ -2,7 +2,8 @@ import React from 'react';
 export default function ContactForm() {
   return (
     <section>
-      <h2>Get in touch</h2>
+      <h3>Schedule an Appointment</h3>
+      <p>Fill out this contact form and you'll will recieve a call back.</p>
       <form method="post" action="#">
         <div className="fields">
           <div className="field half">
@@ -11,13 +12,24 @@ export default function ContactForm() {
           <div className="field half">
             <input type="email" name="email" id="email" placeholder="Email" />
           </div>
+          <div className="field half">
+            <input type="phone" name="phone" id="phone" placeholder="Phone" />
+          </div>
+          <div className="field half">
+            <input
+              type="text"
+              name="preffereddate"
+              id="preffereddate"
+              placeholder="Preffered Appt Date"
+            />
+          </div>
           <div className="field">
             <textarea name="message" id="message" placeholder="Message" />
           </div>
         </div>
         <ul className="actions">
           <li>
-            <input type="submit" value="Send" className="primary" />
+            <input type="submit" value="Submit" className="primary" />
           </li>
         </ul>
       </form>
