@@ -1,19 +1,27 @@
 import React from 'react';
 import config from '../../config';
-import { Link } from 'gatsby';
 
 export default function Location() {
   return (
-    <div>
-      <div>{config.locationName}</div>
-      <div>
-        <Link to="{config.locationLink}">{config.locationAddress}</Link>
-      </div>
-      <br></br>
-      <div>
-        <Link to="{config.locationPhoneLink}">{config.locationPhone}</Link>
-      </div>
-      <br></br>
+    <div className="footer-social">
+      <ul className="icons">
+        {config.locations.map(location => {
+          const { name, address, mapURL, phone } = location;
+          return (
+            <li key={name}>
+              <span className="label">{name}</span>
+              <div>
+                <a href={mapURL} title="name" target="blank">
+                  <span className="label">{address}</span>
+                </a>
+              </div>
+              <a href={phone} title="phone">
+                <span className="label">{phone}</span>
+              </a>
+            </li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
