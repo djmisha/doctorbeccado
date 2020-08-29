@@ -35,13 +35,15 @@
       }
     }
     .title {
-      font-size: 1.2em;
+      font-size: 1.1em;
       line-height: 1.2em;
     }
     .subtitle {
+      font-size: 0.8em;
       display: block;
       font-weight: normal;
       text-transform: none;
+      letter-spacing: _font(letter-spacing);
     }
   }
 
