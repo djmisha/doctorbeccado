@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import Location from './Location';
 import Social from './Social';
 
@@ -7,22 +8,37 @@ export default function Nav({ onClose = () => {} }) {
   return (
     <nav id="menu">
       <div className="inner">
-        {/* <p>Menu</p> */}
         <ul>
           <li>
             <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="#About">About</a>
+            <AnchorLink to="#About" title="About">
+              <span>About</span>
+            </AnchorLink>
           </li>
           <li>
-            <a href="#request">Request Appointment</a>
+            <AnchorLink to="#FamilyMedicine" title="FamilyMedicine">
+              <span>Family Medicine</span>
+            </AnchorLink>
+          </li>
+          <li>
+            <AnchorLink to="#SportsMedicine" title="SportsMedicine">
+              <span>Sports Medicine</span>
+            </AnchorLink>
+          </li>
+          <li>
+            <AnchorLink to="#RequestAppointment" title="Request Appointment">
+              <span>Request Appointment</span>
+            </AnchorLink>
           </li>
         </ul>
         <br></br>
         <Social />
         <br></br>
-        <Location />
+        <section className="nav-locations">
+          <Location />
+        </section>
       </div>
       <a
         className="close"

@@ -4,7 +4,7 @@ import config from '../../config';
 import Layout from '../components/Layout';
 
 import hero from '../assets/images/hero.jpg';
-import pic1 from '../assets/images/hero.jpg';
+// import pic1 from '../assets/images/hero.jpg';
 import rebecca from '../assets/images/rebecca.jpg';
 
 // import { Link } from 'gatsby';
@@ -62,7 +62,7 @@ const IndexPage = () => (
           world with Team USA, loves to be active with sports and spend time
           with her husband and son.
         </p>
-        <div className="box alt">
+        {/* <div className="box alt">
           <div className="row gtr-uniform">
             <div className="col-4">
               <span className="image fit">
@@ -95,91 +95,130 @@ const IndexPage = () => (
               </span>
             </div>
           </div>
-        </div>
-        <section>
-          <div className="box alt">
-            <div className="row gtr-uniform">
-              <div className="col-6">
-                <h3>Family Medicine</h3>
-                <p>
-                  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt
-                  felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-                  primis in faucibus vestibulum. Blandit adipiscing eu felis
-                  iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
-                  ac pellentesque praesent tincidunt felis sagittis eget. tempus
-                  euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
-                  Blandit adipiscing eu felis iaculis volutpat ac adipiscing
-                  accumsan eu faucibus. Integer ac pellentesque praesent.
-                </p>
-              </div>
-              <div className="col-6">
-                <h3>Sports Medicine</h3>
-                <p>
-                  Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt
-                  felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-                  primis in faucibus vestibulum. Blandit adipiscing eu felis
-                  iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
-                  ac pellentesque praesent tincidunt felis sagittis eget. tempus
-                  euismod. Vestibulum ante ipsum primis in faucibus vestibulum.
-                  Blandit adipiscing eu felis iaculis volutpat ac adipiscing
-                  accumsan eu faucibus. Integer ac pellentesque praesent.
-                </p>
-              </div>
-            </div>
-          </div>
+        </div> */}
+        <hr></hr>
+        <section id="FamilyMedicine">
+          <h2>Family Medicine</h2>
+          <p>
+            <span className="image left">
+              <img src={hero} alt="{config.siteTitle}" />
+            </span>
+          </p>
+          <p>
+            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
+            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
+            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+            praesent. Fringilla nisl. Donec accumsan interdum nisi, quis
+            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+            praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum
+            ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
+            felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
+            ac pellentesque praesent.
+          </p>
+          <p>
+            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
+            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
+            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+            praesent. Fringilla nisl. Donec accumsan interdum nisi, quis
+            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+            praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum
+            ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
+            felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
+            ac pellentesque praesent.
+          </p>
         </section>
+        <hr></hr>
+        <section id="SportsMedicine">
+          <h2>Sports Medicine</h2>
+          <p>
+            <span className="image right">
+              <img src={hero} alt="{config.siteTitle}" />
+            </span>
+          </p>
+          <p>
+            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
+            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
+            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+            praesent.
+          </p>
+          <p>
+            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
+            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
+            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
+            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
+            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
+            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
+            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
+            praesent.
+          </p>
+        </section>
+        <hr></hr>
         <section>
-          <section>
-            <h3>Affiliations and Memberships</h3>
-            <div className="table-wrapper">
-              <table>
-                <thead>
-                  <tr>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>AOA</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                  </tr>
-                  <tr>
-                    <td>AOASM</td>
-                    <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                  </tr>
-                  <tr>
-                    <td>ACOFP</td>
-                    <td>Morbi faucibus arcu accumsan lorem.</td>
-                  </tr>
-                  <tr>
-                    <td>ACOFP CA</td>
-                    <td>Vitae integer tempus condimentum.</td>
-                  </tr>
-                  <tr>
-                    <td>Team USA Physician</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                  </tr>
-                  <tr>
-                    <td>USA Womens Waterpolo</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                  </tr>
-                  <tr>
-                    <td>USA Rugby</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                  </tr>
-                  <tr>
-                    <td>San Diego Legion</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                  </tr>
-                  <tr>
-                    <td>San Diego Ballet</td>
-                    <td>Ante turpis integer aliquet porttitor.</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </section>
+          <h3>Affiliations and Memberships</h3>
+          <div className="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>AOA</td>
+                  <td>Ante turpis integer aliquet porttitor.</td>
+                </tr>
+                <tr>
+                  <td>AOASM</td>
+                  <td>Vis ac commodo adipiscing arcu aliquet.</td>
+                </tr>
+                <tr>
+                  <td>ACOFP</td>
+                  <td>Morbi faucibus arcu accumsan lorem.</td>
+                </tr>
+                <tr>
+                  <td>ACOFP CA</td>
+                  <td>Vitae integer tempus condimentum.</td>
+                </tr>
+                <tr>
+                  <td>Team USA Physician</td>
+                  <td>Ante turpis integer aliquet porttitor.</td>
+                </tr>
+                <tr>
+                  <td>USA Womens Waterpolo</td>
+                  <td>Ante turpis integer aliquet porttitor.</td>
+                </tr>
+                <tr>
+                  <td>USA Rugby</td>
+                  <td>Ante turpis integer aliquet porttitor.</td>
+                </tr>
+                <tr>
+                  <td>San Diego Legion</td>
+                  <td>Ante turpis integer aliquet porttitor.</td>
+                </tr>
+                <tr>
+                  <td>San Diego Ballet</td>
+                  <td>Ante turpis integer aliquet porttitor.</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
       </div>
     </div>

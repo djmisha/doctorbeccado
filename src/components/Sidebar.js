@@ -14,7 +14,12 @@ export default function SideBar({ sections = [] }) {
             <span className="symbol">
               <img src={logo} alt="" />
             </span>
-            <span className="title">{config.siteTitle}</span>
+            <span className="title">
+              {config.siteTitle}
+              <div className="subtitle">
+                Family Health &amp; Sports Medecine
+              </div>
+            </span>
           </Link>
           <TopNav onMenuClick={() => toggleHeader(!headerOpen)} />
         </div>

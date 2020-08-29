@@ -7,7 +7,7 @@ import Copyright from './Copyright';
 export default function Footer() {
   return (
     <footer id="footer">
-      <div className="inner" id="request">
+      <div className="inner">
         <ContactForm />
         <section className="footer-location">
           <h4>Office Location</h4>
