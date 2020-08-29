@@ -38,7 +38,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 2.75em;
+    padding: 3.75em 1.75em;
     opacity: 0;
     overflow-y: auto;
 
@@ -54,15 +54,26 @@
       > li {
         padding: 0;
         border-top: solid 1px transparentize(_palette(bg), 0.85);
-
+        background-color: transparent;
+        transition: all 0.2s ease;
+        border-radius: 10px;
+        button {
+          box-shadow: none;
+          width: 100%;
+        }
         a,
         div {
           display: block;
-          padding: 1em 0;
+          padding: 0.7em 0;
           line-height: 1.5;
           border: 0;
           color: inherit;
-          &:hover {
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+        &:hover {
+          background-color: white;
+          a {
             color: black;
           }
         }
@@ -85,7 +96,7 @@
     display: block;
     position: absolute;
     top: 0.5em;
-    left: -6em;
+    right: -1em;
     width: 6em;
     text-indent: 6em;
     height: 3em;
@@ -127,11 +138,11 @@
 
     &:hover {
       &:before {
-        opacity: 1;
+        // opacity: 1;
       }
 
       &:after {
-        opacity: 0;
+        // opacity: 0;
       }
     }
   }

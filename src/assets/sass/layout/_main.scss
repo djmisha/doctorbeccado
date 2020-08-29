@@ -18,13 +18,20 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  padding: 60px 0;
+  @include breakpoint('<=small') {
+    padding: 20px 0;
+  }
+}
+
 .hero {
+  background-color: black;
   height: 60vw;
   max-height: 900px;
-  //   min-height: 300px;
+  min-height: 300px;
   overflow: hidden;
   position: relative;
-  margin-bottom: 5vw;
   img {
     position: absolute;
     z-index: 1;

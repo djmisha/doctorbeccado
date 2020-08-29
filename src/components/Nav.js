@@ -10,27 +10,82 @@ export default function Nav({ onClose = () => {} }) {
       <div className="inner">
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <button
+              onClick={e => {
+                e.preventDefault();
+                onClose();
+              }}
+              onKeyDown={e => {
+                e.preventDefault();
+                onClose();
+              }}
+            >
+              <Link to="/">Home</Link>
+            </button>
           </li>
           <li>
-            <AnchorLink to="#About" title="About">
-              <span>About</span>
-            </AnchorLink>
+            <button
+              onClick={e => {
+                e.preventDefault();
+                onClose();
+              }}
+              onKeyDown={e => {
+                e.preventDefault();
+                onClose();
+              }}
+            >
+              <AnchorLink to="#About" title="About">
+                <span>About</span>
+              </AnchorLink>
+            </button>
           </li>
           <li>
-            <AnchorLink to="#FamilyMedicine" title="FamilyMedicine">
-              <span>Family Medicine</span>
-            </AnchorLink>
+            <button
+              onClick={e => {
+                e.preventDefault();
+                onClose();
+              }}
+              onKeyDown={e => {
+                e.preventDefault();
+                onClose();
+              }}
+            >
+              <AnchorLink to="#FamilyMedicine" title="FamilyMedicine">
+                <span>Family Medicine</span>
+              </AnchorLink>
+            </button>
           </li>
           <li>
-            <AnchorLink to="#SportsMedicine" title="SportsMedicine">
-              <span>Sports Medicine</span>
-            </AnchorLink>
+            <button
+              onClick={e => {
+                e.preventDefault();
+                onClose();
+              }}
+              onKeyDown={e => {
+                e.preventDefault();
+                onClose();
+              }}
+            >
+              <AnchorLink to="#SportsMedicine" title="SportsMedicine">
+                <span>Sports Medicine</span>
+              </AnchorLink>
+            </button>
           </li>
           <li>
-            <AnchorLink to="#RequestAppointment" title="Request Appointment">
-              <span>Request Appointment</span>
-            </AnchorLink>
+            <button
+              onClick={e => {
+                e.preventDefault();
+                onClose();
+              }}
+              onKeyDown={e => {
+                e.preventDefault();
+                onClose();
+              }}
+            >
+              <AnchorLink to="#RequestAppointment" title="Request Appointment">
+                <span>Request Appointment</span>
+              </AnchorLink>
+            </button>
           </li>
         </ul>
         <br></br>
