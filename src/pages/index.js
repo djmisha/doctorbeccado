@@ -13,8 +13,8 @@ const IndexPage = () => (
     <div className="hero">
       <div className="inner">
         <div className="hero-headlines">
-          <span>Customized Care for Your </span>
-          <span>Performance &amp; Health </span>
+          <span>Customized Care </span>
+          <span>for Your Performance &amp; Health </span>
           Dr. Rebeccah Rodriguez Regner graduated from KCOM and is board
           certified in Family Medicine and Sports Medicine.
           <button>Learn More</button>
@@ -101,7 +101,7 @@ const IndexPage = () => (
             </div>
           </div>
         </div> */}
-        <hr></hr>
+
         <section id="FamilyMedicine">
           <h2>Family Medicine</h2>
           <p>
@@ -144,7 +144,7 @@ const IndexPage = () => (
             ac pellentesque praesent.
           </p>
         </section>
-        <hr></hr>
+
         <section id="SportsMedicine">
           <h2>Sports Medicine</h2>
           <p>
@@ -173,7 +173,7 @@ const IndexPage = () => (
             praesent.
           </p>
         </section>
-        <hr></hr>
+
         <section>
           <h3>Affiliations and Memberships</h3>
           <div className="table-wrapper">

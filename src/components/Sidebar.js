@@ -18,7 +18,7 @@ export default function SideBar({ sections = [] }) {
               <h1>
                 {config.siteTitle}
                 <div className="subtitle">
-                  Family Health &amp; Sports Medecine Doctor
+                  Family Health &amp; Sports Medicine Doctor
                 </div>
               </h1>
             </span>
