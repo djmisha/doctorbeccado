@@ -32,6 +32,9 @@ section {
   // min-height: 300px;
   overflow: hidden;
   position: relative;
+  @include breakpoint('<=small') {
+    height: 520px;
+  }
   img {
     position: absolute;
     z-index: 1;
@@ -40,20 +43,31 @@ section {
     left: 0;
     right: 0;
     width: 100vw;
+    @include breakpoint('<=small') {
+      height: 520px;
+      width: auto;
+      left: auto;
+      right: calc(50% - 400px);
+    }
   }
   .hero-headlines {
-    padding-top: 20vw;
+    padding-top: 16vw;
+    @include breakpoint('<=small') {
+      padding-top: 150px;
+    }
   }
   span {
     position: relative;
     display: block;
     z-index: 9999;
     color: white;
+    // color: _palette(accent1);
     line-height: 1;
     letter-spacing: _font(letter-spacing-alt);
     font-size: 4em;
     @include breakpoint('<=small') {
       font-size: 2.5em;
+      text-shadow: 0 2px 3px #000;
     }
     &:nth-of-type(2) {
       font-size: 2.3em;
@@ -61,5 +75,28 @@ section {
         font-size: 1.5em;
       }
     }
+  }
+  p {
+    z-index: 9999;
+    color: white;
+    position: relative;
+    margin-top: 40px;
+    max-width: 500px;
+    font-style: italic;
+    text-shadow: 0 2px 3px #000;
+    @include breakpoint('<=small') {
+      font-size: 0.9em;
+      line-height: 1.2em;
+      max-width: 300px;
+    }
+  }
+  button {
+    margin-top: 0px;
+    z-index: 9999;
+    // color: white;
+    position: relative;
+    // color: white !important;
+    color: _palette(bg) !important;
+    box-shadow: inset 0 0 0 2px _palette(bg);
   }
 }

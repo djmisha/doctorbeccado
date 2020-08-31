@@ -1,6 +1,7 @@
 import React from 'react';
 import config from '../../config';
 import Layout from '../components/Layout';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import hero from '../assets/images/hero.jpg';
 // import pic1 from '../assets/images/hero.jpg';
@@ -15,9 +16,13 @@ const IndexPage = () => (
         <div className="hero-headlines">
           <span>Customized Care </span>
           <span>for Your Performance &amp; Health </span>
-          Dr. Rebeccah Rodriguez Regner graduated from KCOM and is board
-          certified in Family Medicine and Sports Medicine.
-          <button>Learn More</button>
+          <p>
+            Doctor Becca Rodriguez Regner provides customized, complete and
+            quality care for her patients and athletes.
+          </p>
+          <AnchorLink to="#About" title="About">
+            <button>Learn More</button>
+          </AnchorLink>
         </div>
       </div>
       <img src={hero} alt="Hero" />
@@ -65,6 +70,41 @@ const IndexPage = () => (
             She travels the world with Team USA, loves to be active with sports
             and spend time with her husband and son.
           </p>
+
+          <h3>Organization Memberships </h3>
+          <div className="table-wrapper">
+            <table>
+              {/* <thead>
+                <tr>
+                  <th>Organization</th>
+                  <th>Afffiliation</th>
+                </tr>
+              </thead> */}
+              <tbody>
+                <tr>
+                  <td>American Osteopathic Association</td>
+                  <td>Member 2006 - Present</td>
+                </tr>
+                <tr>
+                  <td>American Osteopathic Association of Sports Medicine</td>
+                  <td>Member 2009 - Present, Vice President </td>
+                </tr>
+                <tr>
+                  <td>American College of Osteopathic Family Physicians</td>
+                  <td>
+                    Member 2006 - Present, National Procedural Committee Member.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    American College of Osteopathic Family Physicians California
+                    State Society
+                  </td>
+                  <td> Member 2009 - Present, Board Member</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
 
         {/* <div className="box alt">
@@ -110,38 +150,28 @@ const IndexPage = () => (
             </span>
           </p>
           <p>
-            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
-            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
-            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
-            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
-            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-            praesent. Fringilla nisl. Donec accumsan interdum nisi, quis
-            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-            praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum
-            ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
-            felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
-            ac pellentesque praesent.
+            Dr. Rodriguez is a Primary Care Physician that provides
+            comprehensive quality healthcare for the entire family. Dr.
+            Rodriguez takes care of all ages from newborns to the elderly
+            population and completes minor procedures in the office. Her
+            residency education and training in family medicine allows her to
+            take care of simple to complex medical problems while knowing when
+            to refer to the specialist. Dr. Rodriguez also feels preventive
+            health is key to a person’s lifespan and healthspan. She enjoys
+            educating patients in prevention of disease to help all live life to
+            the fullest.
           </p>
           <p>
-            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
-            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
-            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
-            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
-            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-            praesent. Fringilla nisl. Donec accumsan interdum nisi, quis
-            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-            praesent tincidunt felis sagittis eget. tempus euismod. Vestibulum
-            ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu
-            felis iaculis volutpat ac adipiscing accumsan eu faucibus. Integer
-            ac pellentesque praesent.
+            She completes general physicals, well woman exams, well male exams
+            and sports physicals. Dr. Rodriguez serves as the “quarterback” for
+            your medical home team and helps to facilitate referrals while
+            communicating about quality care for her patients. Her unique
+            training includes osteopathic manipulative treatment that aids in
+            diagnosis and treatment of many medical problems. Dr. Rodriguez is a
+            highly skilled physician using the most updated science to help make
+            medical decisions while forming life-long relationships with the
+            family. Dr. Rodriguez embodies her Osteopathic medical training in
+            treating the whole person's mind, body and spirit.
           </p>
         </section>
 
@@ -153,73 +183,49 @@ const IndexPage = () => (
             </span>
           </p>
           <p>
-            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
-            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
-            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
-            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
-            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-            praesent.
+            Dr. Rodriguez is also a specialist in sports medicine. She completed
+            a fellowship in primary care sports medicine and takes care of
+            pediatric and adult athletes from amateur to elite/professional and
+            Olympic levels. Her extensive training and clinical experience has
+            allowed her to effectively treat musculoskeletal injuries, assess
+            sports nutrition needs, provide counsel on essential vitamins and
+            supplements, and work with teams on sports performance programs. She
+            is trained in musculoskeletal ultrasound and implements the most up
+            to date technology in office to her patients.
           </p>
-          <p>
-            Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis
-            sagittis eget. tempus euismod. Vestibulum ante ipsum primis in
-            faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac
-            adipiscing accumsan eu faucibus. Integer ac pellentesque praesent
-            tincidunt felis sagittis eget. tempus euismod. Vestibulum ante ipsum
-            primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis
-            volutpat ac adipiscing accumsan eu faucibus. Integer ac pellentesque
-            praesent.
-          </p>
-        </section>
 
-        <section>
-          <h3>Affiliations and Memberships</h3>
+          <h3>Team Physician Affiliations </h3>
           <div className="table-wrapper">
             <table>
-              <thead>
+              {/* <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Description</th>
+                  <th>Organization</th>
+                  <th>Afffiliation</th>
                 </tr>
-              </thead>
+              </thead> */}
               <tbody>
                 <tr>
-                  <td>AOA</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
-                </tr>
-                <tr>
-                  <td>AOASM</td>
-                  <td>Vis ac commodo adipiscing arcu aliquet.</td>
-                </tr>
-                <tr>
-                  <td>ACOFP</td>
-                  <td>Morbi faucibus arcu accumsan lorem.</td>
-                </tr>
-                <tr>
-                  <td>ACOFP CA</td>
-                  <td>Vitae integer tempus condimentum.</td>
-                </tr>
-                <tr>
                   <td>Team USA Physician</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
+                  <td>
+                    US Olympic And Paralympic Training Center Team Physician
+                    2009-2020
+                  </td>
                 </tr>
                 <tr>
-                  <td>USA Womens Waterpolo</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
+                  <td>USA Women’s Waterpolo</td>
+                  <td>Team Physician 2016 - Present </td>
                 </tr>
                 <tr>
                   <td>USA Rugby</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
+                  <td>Team Physician 2009 - Present </td>
                 </tr>
                 <tr>
                   <td>San Diego Legion</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
+                  <td>Team Physician 2009 - Present </td>
                 </tr>
                 <tr>
                   <td>San Diego Ballet</td>
-                  <td>Ante turpis integer aliquet porttitor.</td>
+                  <td>Company Physician 2009 - Present </td>
                 </tr>
               </tbody>
             </table>
