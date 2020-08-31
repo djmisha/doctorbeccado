@@ -29,8 +29,8 @@ const IndexPage = () => (
     </div>
     <div id="main">
       <div className="inner">
-        <section>
-          <h2 id="About">Meet {config.siteTitle}</h2>
+        <section id="About">
+          <h2>Meet Doctor {config.siteTitle}</h2>
           <p>
             <span className="image right">
               <img src={rebecca} alt="{config.siteTitle}" />
@@ -141,7 +141,6 @@ const IndexPage = () => (
             </div>
           </div>
         </div> */}
-
         <section id="FamilyMedicine">
           <h2>Family Medicine</h2>
           <p>
@@ -173,6 +172,9 @@ const IndexPage = () => (
             family. Dr. Rodriguez embodies her Osteopathic medical training in
             treating the whole person's mind, body and spirit.
           </p>
+          <AnchorLink to="#RequestAppointment" title="Request Appointment">
+            <button>Request Appointment</button>
+          </AnchorLink>
         </section>
 
         <section id="SportsMedicine">

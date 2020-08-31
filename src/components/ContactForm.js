@@ -34,7 +34,7 @@ export default function ContactForm() {
         </div>
         <ul className="actions">
           <li>
-            <input type="submit" value="Submit" className="primary" />
+            <input type="submit" value="Submit" className="secondary" />
           </li>
         </ul>
       </form>

@@ -85,9 +85,10 @@ h3,
 h4,
 h5,
 h6 {
-  color: _palette(fg-bold);
+  // color: _palette(fg-bold);
+  color: _palette(accent1);
   // font-weight: _font(weight-bold);
-  line-height: 1.5;
+  line-height: 1.2;
   margin: 0 0 (_size(element-margin) * 0.5) 0;
   //   text-transform: uppercase;
   letter-spacing: _font(letter-spacing);
@@ -106,7 +107,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2em;
+  font-size: 1.3em;
 }
 
 h5 {
@@ -153,11 +154,12 @@ sup {
 }
 
 blockquote {
-  border-left: solid (_size(border-width) * 4) _palette(border);
+  border-left: solid (_size(border-width) * 4) _palette(accent2);
   font-style: italic;
   margin: 0 0 _size(element-margin) 0;
   padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4)
     _size(element-margin);
+  color: _palette(accent2);
 }
 
 code {
