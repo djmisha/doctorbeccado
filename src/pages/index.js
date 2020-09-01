@@ -4,7 +4,13 @@ import Layout from '../components/Layout';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import hero from '../assets/images/hero.jpg';
-// import pic1 from '../assets/images/hero.jpg';
+import bgsports from '../assets/images/bg-sports.jpg';
+import family1 from '../assets/images/family-1.jpg';
+import family2 from '../assets/images/family-2.jpg';
+import sports1 from '../assets/images/sports-1.jpg';
+import sports2 from '../assets/images/sports-2.jpg';
+import sports3 from '../assets/images/sports-3.jpg';
+import sports4 from '../assets/images/sports-4.jpg';
 import rebecca from '../assets/images/rebecca.jpg';
 
 // import { Link } from 'gatsby';
@@ -27,6 +33,7 @@ const IndexPage = () => (
       </div>
       <img src={hero} alt="Hero" />
     </div>
+
     <div id="main">
       <div className="inner">
         <section id="About">
@@ -43,11 +50,7 @@ const IndexPage = () => (
             staff at the Olympic Training Site in Chula Vista, CA as team
             physician for 10 years.
           </p>
-          <blockquote>
-            Dr. Rebecca Rodriguez was named as one of the “Top Doctors” in the
-            annual San Diego Magazine “Physicians of Exceptional Excellence”
-            survey multiple years.
-          </blockquote>
+
           <p>
             She is honored to currently serve on the USOPC Physician Advisory
             Board. Dr. Rodriguez served as the Medical Director for the high
@@ -71,15 +74,15 @@ const IndexPage = () => (
             and spend time with her husband and son.
           </p>
 
-          <h3>Organization Memberships </h3>
+          <h3> </h3>
           <div className="table-wrapper">
             <table>
-              {/* <thead>
+              <thead>
                 <tr>
-                  <th>Organization</th>
-                  <th>Afffiliation</th>
+                  <th>Organization Memberships</th>
+                  {/* <th>Afffiliation</th> */}
                 </tr>
-              </thead> */}
+              </thead>
               <tbody>
                 <tr>
                   <td>American Osteopathic Association</td>
@@ -107,45 +110,11 @@ const IndexPage = () => (
           </div>
         </section>
 
-        {/* <div className="box alt">
-          <div className="row gtr-uniform">
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic1} alt="" />
-              </span>
-            </div>
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic1} alt="" />
-              </span>
-            </div>
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic1} alt="" />
-              </span>
-            </div>
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic1} alt="" />
-              </span>
-            </div>
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic1} alt="" />
-              </span>
-            </div>
-            <div className="col-4">
-              <span className="image fit">
-                <img src={pic1} alt="" />
-              </span>
-            </div>
-          </div>
-        </div> */}
         <section id="FamilyMedicine">
           <h2>Family Medicine</h2>
           <p>
-            <span className="image left">
-              <img src={hero} alt="{config.siteTitle}" />
+            <span className="image right">
+              <img src={family2} alt="{config.siteTitle}" />
             </span>
           </p>
           <p>
@@ -159,6 +128,11 @@ const IndexPage = () => (
             health is key to a person’s lifespan and healthspan. She enjoys
             educating patients in prevention of disease to help all live life to
             the fullest.
+          </p>
+          <p>
+            <span className="image left">
+              <img src={family1} alt="{config.siteTitle}" />
+            </span>
           </p>
           <p>
             She completes general physicals, well woman exams, well male exams
@@ -176,14 +150,23 @@ const IndexPage = () => (
             <button>Request Appointment</button>
           </AnchorLink>
         </section>
+      </div>
+    </div>
 
+    <div className="callout">
+      <div className="inner">
+        <p>
+          Dr. Rebecca Rodriguez was named as one of the “Top Doctors” in the
+          annual San Diego Magazine “Physicians of Exceptional Excellence”
+          survey multiple years.
+        </p>
+      </div>
+      <img src={bgsports} alt="Hero" />
+    </div>
+    <div id="main">
+      <div className="inner">
         <section id="SportsMedicine">
           <h2>Sports Medicine</h2>
-          <p>
-            <span className="image right">
-              <img src={hero} alt="{config.siteTitle}" />
-            </span>
-          </p>
           <p>
             Dr. Rodriguez is also a specialist in sports medicine. She completed
             a fellowship in primary care sports medicine and takes care of
@@ -196,15 +179,39 @@ const IndexPage = () => (
             to date technology in office to her patients.
           </p>
 
-          <h3>Team Physician Affiliations </h3>
+          <div className="box alt">
+            <div className="row gtr-uniform">
+              <div className="col-3">
+                <span className="image fit">
+                  <img src={sports2} alt="" />
+                </span>
+              </div>
+              <div className="col-3">
+                <span className="image fit">
+                  <img src={sports3} alt="" />
+                </span>
+              </div>
+              <div className="col-3">
+                <span className="image fit">
+                  <img src={sports4} alt="" />
+                </span>
+              </div>
+              <div className="col-3">
+                <span className="image fit">
+                  <img src={sports1} alt="" />
+                </span>
+              </div>
+            </div>
+          </div>
+
           <div className="table-wrapper">
             <table>
-              {/* <thead>
+              <thead>
                 <tr>
-                  <th>Organization</th>
-                  <th>Afffiliation</th>
+                  <th>Team Physician Affiliations </th>
+                  {/* <th>Afffiliation</th> */}
                 </tr>
-              </thead> */}
+              </thead>
               <tbody>
                 <tr>
                   <td>Team USA Physician</td>

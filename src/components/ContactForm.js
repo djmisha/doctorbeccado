@@ -6,7 +6,7 @@ export default function ContactForm() {
       <p>Fill out this contact form to request an appointment.</p>
       <form
         method="post"
-        // action="/success"
+        action="/thank-you"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
       >

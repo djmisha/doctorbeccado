@@ -5,6 +5,10 @@
 ///
 
 /* Header */
+body {
+  border-top: 5px solid _palette(accent1);
+  border-bottom: 5px solid _palette(accent1);
+}
 
 #header {
   //   @include padding(5em, 0, (3em, 0, -5em, 0));

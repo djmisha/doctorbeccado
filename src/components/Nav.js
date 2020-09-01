@@ -91,9 +91,9 @@ export default function Nav({ onClose = () => {} }) {
         <br></br>
         <Social />
         <br></br>
-        <section className="nav-locations">
+        <div className="nav-locations">
           <Location />
-        </section>
+        </div>
       </div>
       <a
         className="close"

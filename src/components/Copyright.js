@@ -6,11 +6,13 @@ export default function Copyright() {
     <ul className="copyright">
       <li>
         &copy; {config.siteTitle} - {config.siteDescription}. All rights
-        reserved
+        reserved.
       </li>
       <li>
-        <a href="https://asburymediagroup.com">Web Design</a> by Asbury Media
-        Group
+        <a href="https://asburymediagroup.com" target="_blank" rel="noreferrer">
+          Web Design
+        </a>{' '}
+        by Asbury Media Group
       </li>
     </ul>
   );

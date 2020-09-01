@@ -9,16 +9,18 @@ export default function Footer() {
     <footer id="footer">
       <div className="inner">
         <ContactForm />
-        <section className="footer-location">
-          <h4>Office Location</h4>
+        <div className="footer-location">
+          <h4>Office Locations</h4>
+          <br></br>
           <Location />
           <br></br>
           <br></br>
           <h4>Connect with me!</h4>
           <Social />
-        </section>
-        <Copyright />
+        </div>
       </div>
+      <Copyright />
+      {/* </div> */}
     </footer>
   );
 }

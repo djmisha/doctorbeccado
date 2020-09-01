@@ -30,12 +30,13 @@ table {
   td {
     padding: 0.25em 0.75em;
     font-size: 0.9em;
+    line-height: 1.5em;
   }
 
   th {
     color: _palette(fg-bold);
-    font-size: 0.8em;
-    font-weight: _font(weight-bold);
+    font-size: 0.9em;
+    // font-weight: _font(weight-bold);
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left;
   }

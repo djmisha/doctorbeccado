@@ -8,20 +8,20 @@ module.exports = {
       address: '499 N. El Camino Real Suite C-200',
       mapURL:
         'https://www.google.com/maps/place/OasisMD+Lifestyle+Healthcare/@32.8957102,-117.1343341,15z/data=!4m5!3m4!1s0x0:0xa81d4dc355bd295e!8m2!3d32.8957102!4d-117.1343341',
-      phone: '',
+      hours: 'Monday - Wed',
+      phone: '(760) 228-4798',
+      phoneURL: 'tel:+17602284798',
     },
     {
       name: 'Oasis MD - San Diego',
       address: '8901 Activity Road San Diego, CA 92126',
       mapURL: '',
-      phone: '',
+      hours: 'Fridays',
+      phone: '(760) 228-4798',
+      phoneURL: 'tel:+17602284798',
     },
   ],
-  locationName: '',
-  locationAddress: '',
-  locationLink: '',
-  locationPhone: '(760) 228-4798',
-  locationPhoneLink: 'tel:+17602284798',
+
   manifestName: 'Rebeccah',
   manifestShortName: 'rebeccah', // max 12 characters
   manifestStartUrl: '/',

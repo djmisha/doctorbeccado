@@ -35,7 +35,7 @@ a {
   );
   text-decoration: none;
   color: _palette(fg);
-  border-bottom: dotted 1px transparentize(_palette(fg), 0.5);
+  // border-bottom: dotted 1px transparentize(_palette(fg), 0.5);
 
   &:hover {
     border-bottom-color: transparent;
@@ -85,8 +85,8 @@ h3,
 h4,
 h5,
 h6 {
-  // color: _palette(fg-bold);
-  color: _palette(accent1);
+  color: _palette(fg-bold);
+  // color: _palette(accent1);
   // font-weight: _font(weight-bold);
   line-height: 1.2;
   margin: 0 0 (_size(element-margin) * 0.5) 0;
@@ -99,7 +99,7 @@ h6 {
 }
 
 h2 {
-  font-size: 1.7em;
+  font-size: 1.9em;
 }
 
 h3 {
