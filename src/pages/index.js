@@ -6,12 +6,17 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import hero from '../assets/images/hero.jpg';
 import bgsports from '../assets/images/bg-sports.jpg';
 import family1 from '../assets/images/family-1.jpg';
-import family2 from '../assets/images/family-2.jpg';
+// import family2 from '../assets/images/family-2.jpg';
 import sports1 from '../assets/images/sports-1.jpg';
 import sports2 from '../assets/images/sports-2.jpg';
 import sports3 from '../assets/images/sports-3.jpg';
 import sports4 from '../assets/images/sports-4.jpg';
 import rebecca from '../assets/images/rebecca.jpg';
+import logo1 from '../assets/images/logo-1.png';
+import logo2 from '../assets/images/logo-2.png';
+import logo3 from '../assets/images/logo-3.png';
+import logo4 from '../assets/images/logo-4.png';
+import logo5 from '../assets/images/logo-5.png';
 
 // import { Link } from 'gatsby';
 
@@ -113,10 +118,11 @@ const IndexPage = () => (
         <section id="FamilyMedicine">
           <h2>Family Medicine</h2>
           <p>
-            <span className="image right">
-              <img src={family2} alt="{config.siteTitle}" />
+            <span className="image left">
+              <img src={family1} alt="{config.siteTitle}" />
             </span>
           </p>
+
           <p>
             Dr. Rodriguez is a Primary Care Physician that provides
             comprehensive quality healthcare for the entire family. Dr.
@@ -129,11 +135,7 @@ const IndexPage = () => (
             educating patients in prevention of disease to help all live life to
             the fullest.
           </p>
-          <p>
-            <span className="image left">
-              <img src={family1} alt="{config.siteTitle}" />
-            </span>
-          </p>
+
           <p>
             She completes general physicals, well woman exams, well male exams
             and sports physicals. Dr. Rodriguez serves as the “quarterback” for
@@ -167,6 +169,11 @@ const IndexPage = () => (
       <div className="inner">
         <section id="SportsMedicine">
           <h2>Sports Medicine</h2>
+          {/* <p>
+            <span className="image right">
+              <img src={sports1} alt="{config.siteTitle}" />
+            </span>
+          </p> */}
           <p>
             Dr. Rodriguez is also a specialist in sports medicine. She completed
             a fellowship in primary care sports medicine and takes care of
@@ -178,9 +185,14 @@ const IndexPage = () => (
             is trained in musculoskeletal ultrasound and implements the most up
             to date technology in office to her patients.
           </p>
-
+          <br clear="all"></br>
           <div className="box alt">
             <div className="row gtr-uniform">
+              <div className="col-3">
+                <span className="image fit">
+                  <img src={sports1} alt="" />
+                </span>
+              </div>
               <div className="col-3">
                 <span className="image fit">
                   <img src={sports2} alt="" />
@@ -196,20 +208,46 @@ const IndexPage = () => (
                   <img src={sports4} alt="" />
                 </span>
               </div>
-              <div className="col-3">
+            </div>
+          </div>
+
+          <h3>Team Physician Affiliations </h3>
+          <div className="box alt">
+            <div className="row gtr-uniform">
+              <div className="col-2">
                 <span className="image fit">
-                  <img src={sports1} alt="" />
+                  <img src={logo1} alt="" />
+                </span>
+              </div>
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo2} alt="" />
+                </span>
+              </div>
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo3} alt="" />
+                </span>
+              </div>
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo4} alt="" />
+                </span>
+              </div>
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo5} alt="" />
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="table-wrapper">
+          {/* <div className="table-wrapper">
             <table>
               <thead>
                 <tr>
                   <th>Team Physician Affiliations </th>
-                  {/* <th>Afffiliation</th> */}
+                  <th>Afffiliation</th>
                 </tr>
               </thead>
               <tbody>
@@ -238,7 +276,7 @@ const IndexPage = () => (
                 </tr>
               </tbody>
             </table>
-          </div>
+          </div> */}
         </section>
       </div>
     </div>
