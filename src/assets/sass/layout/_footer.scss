@@ -8,7 +8,7 @@
 
 #footer {
   $gutter: _size(gutter);
-  border-top: 5px solid _palette(accent1);
+  border-top: 15px solid _palette(accent1);
 
   @include padding(5em, 0, (0, 0, 3em, 0));
   background-color: _palette(bg-alt);

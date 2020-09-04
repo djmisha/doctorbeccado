@@ -3,7 +3,7 @@ export default function ContactForm() {
   return (
     <section id="RequestAppointment">
       <h3>Request an Appointment</h3>
-      <p>Fill out this contact form to request an appointment.</p>
+      <p>Please fill out this contact form to request an appointment.</p>
       <form
         method="post"
         action="/thank-you"
@@ -34,7 +34,11 @@ export default function ContactForm() {
         </div>
         <ul className="actions">
           <li>
-            <input type="submit" value="Submit" className="secondary" />
+            <input
+              type="submit"
+              value="Submit"
+              className="secondary button icon fa-paper-plane"
+            />
           </li>
         </ul>
       </form>

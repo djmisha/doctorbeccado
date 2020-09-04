@@ -6,7 +6,8 @@
 
 /* Main */
 
-#main {
+#main,
+.main {
   @include padding(5em, 0, (-5em, 0, 3em, 0));
 
   @include breakpoint('<=small') {
@@ -102,14 +103,17 @@ section {
 }
 
 .callout {
-  border-top: 5px solid _palette(accent1);
-  border-bottom: 5px solid _palette(accent1);
+  border-top: 15px solid _palette(accent2);
+  border-bottom: 15px solid _palette(accent2);
   background-color: black;
   height: 50vw;
+  max-height: 900px;
   position: relative;
   overflow: hidden;
+  margin-bottom: 80px;
   @include breakpoint('<=small') {
     height: 520px;
+    margin-bottom: 40px;
   }
   img {
     position: absolute;
@@ -139,10 +143,21 @@ section {
     font-style: italic;
     font-size: 1.9em;
     line-height: 1.8em;
+    border-bottom: 15px solid _palette(accent2);
     @include breakpoint('<=small') {
       padding-top: 35%;
       font-size: 1.5em;
       line-height: 1.5em;
     }
   }
+}
+
+.center-title {
+  margin-top: 100px;
+  text-align: center;
+}
+
+.team-logos {
+  display: flex;
+  justify-content: center;
 }

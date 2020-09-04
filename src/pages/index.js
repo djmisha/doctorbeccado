@@ -32,7 +32,7 @@ const IndexPage = () => (
             quality care for her patients and athletes.
           </p>
           <AnchorLink to="#About" title="About">
-            <button>Learn More</button>
+            <button className="button">Learn More</button>
           </AnchorLink>
         </div>
       </div>
@@ -63,11 +63,11 @@ const IndexPage = () => (
             Rio. She Was part of the medical staff as Team USA physician at the
             2019 Pan American Games in Lima. Peru.
           </p>
-          <p>
+          <blockquote>
             Dr. Rodriguez is also a team physician for USA Womens Waterpolo and
             USA Rugby. She is the head team physician for the major league rugby
             team, the San Diego Legion.
-          </p>
+          </blockquote>
           <p>
             Dr. Rodriguez is passionate about improving quality healthcare and
             helps make policy for national organizations such as: the AOASM as
@@ -79,43 +79,40 @@ const IndexPage = () => (
             and spend time with her husband and son.
           </p>
 
-          <h3> </h3>
-          <div className="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th>Organization Memberships</th>
-                  {/* <th>Afffiliation</th> */}
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>American Osteopathic Association</td>
-                  <td>Member 2006 - Present</td>
-                </tr>
-                <tr>
-                  <td>American Osteopathic Association of Sports Medicine</td>
-                  <td>Member 2009 - Present, Vice President </td>
-                </tr>
-                <tr>
-                  <td>American College of Osteopathic Family Physicians</td>
-                  <td>
-                    Member 2006 - Present, National Procedural Committee Member.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    American College of Osteopathic Family Physicians California
-                    State Society
-                  </td>
-                  <td> Member 2009 - Present, Board Member</td>
-                </tr>
-              </tbody>
-            </table>
+          <h3 className="center-title">Team Physician </h3>
+          <div className="box alt">
+            <div className="team-logos">
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo5} alt="" />
+                </span>
+              </div>
+
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo3} alt="" />
+                </span>
+              </div>
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo4} alt="" />
+                </span>
+              </div>
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo1} alt="" />
+                </span>
+              </div>
+              <div className="col-2">
+                <span className="image fit">
+                  <img src={logo2} alt="" />
+                </span>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section id="FamilyMedicine">
+        <div id="FamilyMedicine">
           <h2>Family Medicine</h2>
           <p>
             <span className="image left">
@@ -149,9 +146,11 @@ const IndexPage = () => (
             treating the whole person's mind, body and spirit.
           </p>
           <AnchorLink to="#RequestAppointment" title="Request Appointment">
-            <button>Request Appointment</button>
+            <button className="button icon fa-calendar-alt">
+              Request Appointment
+            </button>
           </AnchorLink>
-        </section>
+        </div>
       </div>
     </div>
 
@@ -165,7 +164,7 @@ const IndexPage = () => (
       </div>
       <img src={bgsports} alt="Hero" />
     </div>
-    <div id="main">
+    <div class="main">
       <div className="inner">
         <section id="SportsMedicine">
           <h2>Sports Medicine</h2>
@@ -186,6 +185,7 @@ const IndexPage = () => (
             to date technology in office to her patients.
           </p>
           <br clear="all"></br>
+
           <div className="box alt">
             <div className="row gtr-uniform">
               <div className="col-3">
@@ -210,47 +210,31 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
-
-          <h3>Team Physician Affiliations </h3>
-          <div className="box alt">
-            <div className="row gtr-uniform">
-              <div className="col-2">
-                <span className="image fit">
-                  <img src={logo1} alt="" />
-                </span>
-              </div>
-              <div className="col-2">
-                <span className="image fit">
-                  <img src={logo2} alt="" />
-                </span>
-              </div>
-              <div className="col-2">
-                <span className="image fit">
-                  <img src={logo3} alt="" />
-                </span>
-              </div>
-              <div className="col-2">
-                <span className="image fit">
-                  <img src={logo4} alt="" />
-                </span>
-              </div>
-              <div className="col-2">
-                <span className="image fit">
-                  <img src={logo5} alt="" />
-                </span>
-              </div>
-            </div>
-          </div>
-
-          {/* <div className="table-wrapper">
+          <h3 className="center-title">Organization Memberships</h3>
+          <div className="table-wrapper">
             <table>
-              <thead>
-                <tr>
-                  <th>Team Physician Affiliations </th>
-                  <th>Afffiliation</th>
-                </tr>
-              </thead>
               <tbody>
+                <tr>
+                  <td>American Osteopathic Association</td>
+                  <td>Member 2006 - Present</td>
+                </tr>
+                <tr>
+                  <td>American Osteopathic Association of Sports Medicine</td>
+                  <td>Member 2009 - Present, Vice President </td>
+                </tr>
+                <tr>
+                  <td>American College of Osteopathic Family Physicians</td>
+                  <td>
+                    Member 2006 - Present, National Procedural Committee Member.
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    American College of Osteopathic Family Physicians California
+                    State Society
+                  </td>
+                  <td> Member 2009 - Present, Board Member</td>
+                </tr>
                 <tr>
                   <td>Team USA Physician</td>
                   <td>
@@ -276,7 +260,7 @@ const IndexPage = () => (
                 </tr>
               </tbody>
             </table>
-          </div> */}
+          </div>
         </section>
       </div>
     </div>
