@@ -17,6 +17,7 @@ import logo2 from '../assets/images/logo-2.png';
 import logo3 from '../assets/images/logo-3.png';
 import logo4 from '../assets/images/logo-4.png';
 import logo5 from '../assets/images/logo-5.png';
+import { Link } from 'gatsby';
 
 // import { Link } from 'gatsby';
 
@@ -55,7 +56,6 @@ const IndexPage = () => (
             staff at the Olympic Training Site in Chula Vista, CA as team
             physician for 10 years.
           </p>
-
           <p>
             She is honored to currently serve on the USOPC Physician Advisory
             Board. Dr. Rodriguez served as the Medical Director for the high
@@ -78,7 +78,6 @@ const IndexPage = () => (
             She travels the world with Team USA, loves to be active with sports
             and spend time with her husband and son.
           </p>
-
           <h3 className="center-title">Team Physician </h3>
           <div className="box alt">
             <div className="team-logos">
@@ -261,6 +260,24 @@ const IndexPage = () => (
               </tbody>
             </table>
           </div>
+          <h3>
+            <br></br>
+            <br></br>Write a Review
+          </h3>
+          <p>
+            Thank you for visiting my website. I hope it gives a small insight
+            to my educational training, clinical experience, and passion to help
+            people. If you are a current patient, I would greatly appreciate 30
+            seconds of your time to write a review about your office experience!
+          </p>
+          <Link
+            external
+            className="button"
+            target="_blank"
+            to="https://www.google.com/search?hl=en-US&gl=us&q=Dr.+Becca+Rodriguez+Regner,+499+N+El+Camino+Real+Suite+C+-200,+Encinitas,+CA+92024&ludocid=3082030671131112221&lsig=AB86z5UfD36msj8MLGLMv7kbUQ0W#lrd=0x80dc0b85607240bf:0x2ac59290eba0f31d,3"
+          >
+            Write A Review
+          </Link>
         </section>
       </div>
     </div>
