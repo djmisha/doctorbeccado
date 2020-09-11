@@ -5,10 +5,11 @@ export default function ContactForm() {
       <h3>Request an Appointment</h3>
       <p>Please fill out this contact form to request an appointment.</p>
       <form
-        method="post"
+        method="POST"
         action="/thank-you"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
+        name="Contact Form"
       >
         <div className="fields">
           <div className="field half">

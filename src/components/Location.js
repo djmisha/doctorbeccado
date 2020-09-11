@@ -18,7 +18,8 @@ export default function Location() {
               <a href={phoneURL} title="phone">
                 <span className="label">{phone}</span>
               </a>
-              <p className="hours">Office Hours: {hours}</p>
+              <p className="hours">Office Hours</p>
+              <p className="hours">{hours}</p>
             </li>
           );
         })}
