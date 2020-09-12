@@ -64,9 +64,9 @@ const IndexPage = () => (
             2019 Pan American Games in Lima. Peru.
           </p>
           <blockquote>
-            Dr. Rodriguez is also a team physician for USA Womens Waterpolo and
-            USA Rugby. She is the head team physician for the major league rugby
-            team, the San Diego Legion.
+            Dr. Rodriguez is the team physician for USA Women's Waterpolo and
+            USA Rugby. She is also the head team physician for the major league
+            rugby team, the San Diego Legion.
           </blockquote>
           <p>
             Dr. Rodriguez is passionate about improving quality healthcare and
@@ -78,33 +78,33 @@ const IndexPage = () => (
             She travels the world with Team USA, loves to be active with sports
             and spend time with her husband and son.
           </p>
-          <h3 className="center-title">Team Physician </h3>
+          <h3 className="center-title">Official Team Physician</h3>
           <div className="box alt">
             <div className="team-logos">
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo5} alt="" />
+                  <img src={logo5} alt="logo" />
                 </span>
               </div>
 
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo3} alt="" />
+                  <img src={logo3} alt="logo" />
                 </span>
               </div>
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo4} alt="" />
+                  <img src={logo4} alt="logo" />
                 </span>
               </div>
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo1} alt="" />
+                  <img src={logo1} alt="logo" />
                 </span>
               </div>
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo2} alt="" />
+                  <img src={logo2} alt="logo" />
                 </span>
               </div>
             </div>
@@ -189,22 +189,22 @@ const IndexPage = () => (
             <div className="row gtr-uniform">
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports1} alt="" />
+                  <img src={sports1} alt="sport medicine photo" />
                 </span>
               </div>
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports2} alt="" />
+                  <img src={sports2} alt="sport medicine photo" />
                 </span>
               </div>
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports3} alt="" />
+                  <img src={sports3} alt="sport medicine photo" />
                 </span>
               </div>
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports4} alt="" />
+                  <img src={sports4} alt="sport medicine photo" />
                 </span>
               </div>
             </div>
