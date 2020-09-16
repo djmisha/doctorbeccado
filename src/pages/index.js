@@ -163,7 +163,7 @@ const IndexPage = () => (
       </div>
       <img src={bgsports} alt="Hero" />
     </div>
-    <div class="main">
+    <div className="main">
       <div className="inner">
         <section id="SportsMedicine">
           <h2>Sports Medicine</h2>
@@ -271,7 +271,7 @@ const IndexPage = () => (
             seconds of your time to write a review about your office experience!
           </p>
           <Link
-            external
+            external="true"
             className="button"
             target="_blank"
             to="https://www.google.com/search?hl=en-US&gl=us&q=Dr.+Becca+Rodriguez+Regner,+499+N+El+Camino+Real+Suite+C+-200,+Encinitas,+CA+92024&ludocid=3082030671131112221&lsig=AB86z5UfD36msj8MLGLMv7kbUQ0W#lrd=0x80dc0b85607240bf:0x2ac59290eba0f31d,3"

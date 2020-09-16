@@ -46,8 +46,16 @@ class Layout extends Component {
             <Helmet
               title={data.site.siteMetadata.title}
               meta={[
-                { name: 'description', content: 'Phantom' },
-                { name: 'keywords', content: 'site, web' },
+                {
+                  name: 'description',
+                  content:
+                    'Family Medicine & Sports Medicine Physician in Encinitas and San Diego CA',
+                },
+                {
+                  name: 'keywords',
+                  content:
+                    'doctor, san diego, encinitas, family medicine, sports medicine, primary care',
+                },
               ]}
             >
               <html lang="en" />
