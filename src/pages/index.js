@@ -49,7 +49,7 @@ const IndexPage = () => (
             </span>
           </p>
           <p>
-            Dr. Rebeccah Rodriguez Regner, know by her shorter as Becca,
+            Dr. Rebeccah Rodriguez Regner, also know by her nickname as Becca,
             graduated from KCOM and is board certified in Family Medicine and
             Sports Medicine. Dr. Rodriguez serves the USOPC as a Team USA
             physician and was on the medical staff at the Olympic Training Site

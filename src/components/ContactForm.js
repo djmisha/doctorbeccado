@@ -35,8 +35,7 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h3>Request an Appointment</h3>
-        <p>Please fill out this contact form to request an appointment.</p>
+        <h1>Contact</h1>
         <form
           name="Doctorbeccado.com Contact Form"
           method="post"
@@ -45,28 +44,42 @@ export default class Contact extends React.Component {
           data-netlify-honeypot="bot-field"
           onSubmit={this.handleSubmit}
         >
-          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-          <input type="hidden" name="form-name" value="contact" />
-          <p hidden>
-            <label>
-              Don’t fill this out:{' '}
-              <input name="bot-field" onChange={this.handleChange} />
-            </label>
-          </p>
           <div className="fields">
+            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+            <input type="hidden" name="form-name" value="contact" />
+            <p hidden>
+              <label>
+                Don’t fill this out:{' '}
+                <input name="bot-field" onChange={this.handleChange} />
+              </label>
+            </p>
+
             <div className="field half">
               <input
                 type="text"
                 name="fullname"
                 id="name"
                 placeholder="Full Name"
+                onChange={this.handleChange}
               />
             </div>
             <div className="field half">
-              <input type="email" name="email" id="email" placeholder="Email" />
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                onChange={this.handleChange}
+              />
             </div>
             <div className="field half">
-              <input type="phone" name="phone" id="phone" placeholder="Phone" />
+              <input
+                type="phone"
+                name="phone"
+                id="phone"
+                placeholder="Phone"
+                onChange={this.handleChange}
+              />
             </div>
             <div className="field half">
               <input
@@ -74,10 +87,16 @@ export default class Contact extends React.Component {
                 name="preffereddate"
                 id="preffereddate"
                 placeholder="Preffered Appointment Date"
+                onChange={this.handleChange}
               />
             </div>
             <div className="field">
-              <textarea name="message" id="message" placeholder="Message" />
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                onChange={this.handleChange}
+              />
             </div>
           </div>
           <ul className="actions">
@@ -94,57 +113,3 @@ export default class Contact extends React.Component {
     );
   }
 }
-
-// import React from 'react';
-// export default function ContactForm() {
-//   return (
-//     <section id="RequestAppointment">
-//       <h3>Request an Appointment</h3>
-//       <p>Please fill out this contact form to request an appointment.</p>
-//       <form
-//         method="POST"
-//         action="/thank-you"
-//         data-netlify="true"
-//         // data-netlify-honeypot="bot-field"
-//         name="doctorbeccado.com Contact Form"
-//       >
-//         <div className="fields">
-//           <div className="field half">
-//             <input
-//               type="text"
-//               name="fullname"
-//               id="name"
-//               placeholder="Full Name"
-//             />
-//           </div>
-//           <div className="field half">
-//             <input type="email" name="email" id="email" placeholder="Email" />
-//           </div>
-//           <div className="field half">
-//             <input type="phone" name="phone" id="phone" placeholder="Phone" />
-//           </div>
-//           <div className="field half">
-//             <input
-//               type="text"
-//               name="preffereddate"
-//               id="preffereddate"
-//               placeholder="Preffered Appointment Date"
-//             />
-//           </div>
-//           <div className="field">
-//             <textarea name="message" id="message" placeholder="Message" />
-//           </div>
-//         </div>
-//         <ul className="actions">
-//           <li>
-//             <input
-//               type="submit"
-//               value="Submit"
-//               className="secondary button icon fa-paper-plane"
-//             />
-//           </li>
-//         </ul>
-//       </form>
-//     </section>
-//   );
-// }
