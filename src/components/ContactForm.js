@@ -7,8 +7,7 @@ export default function ContactForm() {
       <form
         method="POST"
         action="/thank-you"
-        data-netlify="true"
-        // data-netlify-honeypot="bot-field"
+        netlify
         name="doctorbeccado.com Contact Form"
       >
         <div className="fields">
@@ -16,7 +15,7 @@ export default function ContactForm() {
             <input
               type="text"
               name="fullname"
-              id="name"
+              id="fullname"
               placeholder="Full Name"
             />
           </div>
