@@ -4,7 +4,7 @@ import Layout from '../components/Layout';
 
 const IndexPage = () => (
   <Layout>
-    <div id="main">
+    <div id="main" className="thankyou">
       <div className="inner">
         <h2>Thank you for contacting Doctor Rebecca Rodriguez Regner.</h2>
         <p>
