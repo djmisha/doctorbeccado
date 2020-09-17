@@ -8,7 +8,7 @@ export default function ContactForm() {
         method="POST"
         action="/thank-you"
         data-netlify="true"
-        data-netlify-honeypot="bot-field"
+        // data-netlify-honeypot="bot-field"
         name="doctorbeccado.com Contact Form"
       >
         <div className="fields">
