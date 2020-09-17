@@ -5,45 +5,11 @@ export default function ContactForm() {
       <h3>Request an Appointment</h3>
       <p>Please fill out this contact form to request an appointment.</p>
       <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        action="/thank-you"
-      >
-        <p>
-          <label>
-            Your Name: <input type="text" name="name" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Email: <input type="email" name="email" />
-          </label>
-        </p>
-        <p>
-          <label>
-            Your Role:{' '}
-            <select name="role[]" multiple>
-              <option value="leader">Leader</option>
-              <option value="follower">Follower</option>
-            </select>
-          </label>
-        </p>
-        <p>
-          <label>
-            Message: <textarea name="message"></textarea>
-          </label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-      {/* <form 
         method="POST"
         action="/thank-you"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
-        name="Contact Form"
+        name="doctorbeccado.com Contact Form"
       >
         <div className="fields">
           <div className="field half">
@@ -77,7 +43,6 @@ export default function ContactForm() {
           </li>
         </ul>
       </form>
-     */}
     </section>
   );
 }
