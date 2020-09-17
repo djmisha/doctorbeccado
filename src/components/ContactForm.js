@@ -13,7 +13,12 @@ export default function ContactForm() {
       >
         <div className="fields">
           <div className="field half">
-            <input type="text" name="name" id="name" placeholder="Name" />
+            <input
+              type="text"
+              name="fullname"
+              id="name"
+              placeholder="Full Name"
+            />
           </div>
           <div className="field half">
             <input type="email" name="email" id="email" placeholder="Email" />
