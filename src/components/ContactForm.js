@@ -4,7 +4,12 @@ export default function ContactForm() {
     <section id="RequestAppointment">
       <h3>Request an Appointment</h3>
       <p>Please fill out this contact form to request an appointment.</p>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        action="/thank-you"
+      >
         <p>
           <label>
             Your Name: <input type="text" name="name" />
