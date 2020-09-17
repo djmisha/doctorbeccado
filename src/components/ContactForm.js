@@ -35,9 +35,10 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h1>Contact</h1>
+        <h3>Request an Appointment</h3>
+        <p>Please fill out this contact form to request an appointment.</p>
         <form
-          name="contact test"
+          name="Doctorbeccado.com Contact Form"
           method="post"
           action="/thank-you/"
           data-netlify="true"
@@ -52,30 +53,42 @@ export default class Contact extends React.Component {
               <input name="bot-field" onChange={this.handleChange} />
             </label>
           </p>
-          <p>
-            <label>
-              Your name:
-              <br />
-              <input type="text" name="name" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Your email:
-              <br />
-              <input type="email" name="email" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:
-              <br />
-              <textarea name="message" onChange={this.handleChange} />
-            </label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
+          <div className="fields">
+            <div className="field half">
+              <input
+                type="text"
+                name="fullname"
+                id="name"
+                placeholder="Full Name"
+              />
+            </div>
+            <div className="field half">
+              <input type="email" name="email" id="email" placeholder="Email" />
+            </div>
+            <div className="field half">
+              <input type="phone" name="phone" id="phone" placeholder="Phone" />
+            </div>
+            <div className="field half">
+              <input
+                type="text"
+                name="preffereddate"
+                id="preffereddate"
+                placeholder="Preffered Appointment Date"
+              />
+            </div>
+            <div className="field">
+              <textarea name="message" id="message" placeholder="Message" />
+            </div>
+          </div>
+          <ul className="actions">
+            <li>
+              <input
+                type="submit"
+                value="Submit"
+                className="secondary button icon fa-paper-plane"
+              />
+            </li>
+          </ul>
         </form>
       </div>
     );
