@@ -191,27 +191,27 @@
       opacity: 1;
     }
   }
-
-  .nav-locations ul {
-    list-style: none;
+}
+.nav-locations ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 0.9em;
+  line-height: 1.6em;
+  li {
     margin: 0;
     padding: 0;
-    text-align: center;
+  }
+  .label {
+    text-transform: uppercase;
+  }
+  .hours {
+    padding-top: 10px;
     font-size: 0.9em;
-    line-height: 1.6em;
-    li {
-      margin: 0;
-      padding: 0;
-    }
-    .label {
-      text-transform: uppercase;
-    }
-    .hours {
-      padding-top: 10px;
-      font-size: 0.8em;
-    }
+    line-height: 1.2em;
   }
-  ul.icons {
-    text-align: center;
-  }
+}
+ul.icons {
+  text-align: center;
 }

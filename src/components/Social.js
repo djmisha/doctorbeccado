@@ -9,7 +9,13 @@ export default function Social() {
           const { icon, name, url } = social;
           return (
             <li key={url}>
-              <a href={url} className={`icon ${icon}`} title="">
+              <a
+                href={url}
+                className={`icon ${icon}`}
+                title="{name}"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <span className="label">{name}</span>
               </a>
             </li>

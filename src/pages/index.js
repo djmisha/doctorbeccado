@@ -270,6 +270,8 @@ const IndexPage = () => (
             seconds of your time to write a review about your office experience!
           </p>
           <Link
+            rel="noreferrer"
+            title="Write a Review"
             external="true"
             className="button"
             target="_blank"
