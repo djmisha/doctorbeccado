@@ -50,11 +50,11 @@ const IndexPage = () => (
             </span>
           </p>
           <p>
-            Dr. Rebeccah Rodriguez Regner graduated from KCOM and is board
-            certified in Family Medicine and Sports Medicine. Dr. Rodriguez
-            serves the USOPC as a Team USA physician and was on the medical
-            staff at the Olympic Training Site in Chula Vista, CA as team
-            physician for 10 years.
+            Dr. Rebeccah Rodriguez Regner, know by her shorter as Becca,
+            graduated from KCOM and is board certified in Family Medicine and
+            Sports Medicine. Dr. Rodriguez serves the USOPC as a Team USA
+            physician and was on the medical staff at the Olympic Training Site
+            in Chula Vista, CA as team physician for 10 years.
           </p>
           <p>
             She is honored to currently serve on the USOPC Physician Advisory
@@ -83,28 +83,28 @@ const IndexPage = () => (
             <div className="team-logos">
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo5} alt="logo" />
+                  <img src={logo5} alt="team physciains logo 1" />
                 </span>
               </div>
 
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo3} alt="logo" />
+                  <img src={logo3} alt="team physciains logo 2" />
                 </span>
               </div>
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo4} alt="logo" />
+                  <img src={logo4} alt="team physciains logo 3" />
                 </span>
               </div>
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo1} alt="logo" />
+                  <img src={logo1} alt="team physciains logo 4" />
                 </span>
               </div>
               <div className="col-2">
                 <span className="image fit">
-                  <img src={logo2} alt="logo" />
+                  <img src={logo2} alt="team physciains logo 5" />
                 </span>
               </div>
             </div>
@@ -156,9 +156,9 @@ const IndexPage = () => (
     <div className="callout">
       <div className="inner">
         <p>
-          Dr. Rebecca Rodriguez was named as one of the “Top Doctors” in the
-          annual San Diego Magazine “Physicians of Exceptional Excellence”
-          survey multiple years.
+          Dr. Rodriguez was named as one of the “Top Doctors” in the annual San
+          Diego Magazine “Physicians of Exceptional Excellence” survey multiple
+          years.
         </p>
       </div>
       <img src={bgsports} alt="Hero" />
@@ -189,22 +189,22 @@ const IndexPage = () => (
             <div className="row gtr-uniform">
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports1} alt="sport medicine photo" />
+                  <img src={sports1} alt="sport medicine teams" />
                 </span>
               </div>
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports2} alt="sport medicine photo" />
+                  <img src={sports2} alt="sport medicine teams" />
                 </span>
               </div>
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports3} alt="sport medicine photo" />
+                  <img src={sports3} alt="sport medicine teams" />
                 </span>
               </div>
               <div className="col-3">
                 <span className="image fit">
-                  <img src={sports4} alt="sport medicine photo" />
+                  <img src={sports4} alt="sport medicine teams" />
                 </span>
               </div>
             </div>
