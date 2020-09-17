@@ -35,9 +35,10 @@ export default class Contact extends React.Component {
   render() {
     return (
       <div>
-        <h1>Contact</h1>
+        <h3>Request an Appointment</h3>
+        <p>Please fill out this contact form to request an appointment.</p>
         <form
-          name="Doctorbeccado.com Contact Form"
+          name="doctorbeccado.com"
           method="post"
           action="/thank-you/"
           data-netlify="true"

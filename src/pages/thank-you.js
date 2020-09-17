@@ -3,7 +3,7 @@ import React from 'react';
 import Layout from '../components/Layout';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout className="thankyou">
     <div id="main" className="thankyou">
       <div className="inner">
         <h2>Thank you for contacting Dr. Rebecca Rodriguez Regner.</h2>
