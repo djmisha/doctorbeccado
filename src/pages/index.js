@@ -6,7 +6,6 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import hero from '../assets/images/hero.jpg';
 import bgsports from '../assets/images/bg-sports.jpg';
 import family1 from '../assets/images/family-1.jpg';
-// import family2 from '../assets/images/family-2.jpg';
 import sports1 from '../assets/images/sports-1.jpg';
 import sports2 from '../assets/images/sports-2.jpg';
 import sports3 from '../assets/images/sports-3.jpg';
@@ -29,7 +28,7 @@ const IndexPage = () => (
           <span>Customized Care </span>
           <span>for Your Performance &amp; Health </span>
           <p>
-            Doctor Becca Rodriguez Regner provides customized, complete and
+            Doctor Rebecca Rodriguez Regner provides customized, complete and
             quality care for her patients and athletes.
           </p>
           <AnchorLink to="#About" title="About">

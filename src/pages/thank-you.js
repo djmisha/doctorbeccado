@@ -6,7 +6,7 @@ const IndexPage = () => (
   <Layout>
     <div id="main">
       <div className="inner">
-        <h1>Thank you for contacting Doctor Rebecca Rodriguez Regner.</h1>
+        <h2>Thank you for contacting Doctor Rebecca Rodriguez Regner.</h2>
         <p>
           Your submission was successful. Someone will be in touch with you
           shortly.
