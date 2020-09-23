@@ -18,8 +18,6 @@ import logo4 from '../assets/images/logo-4.png';
 import logo5 from '../assets/images/logo-5.png';
 import { Link } from 'gatsby';
 
-// import { Link } from 'gatsby';
-
 const IndexPage = () => (
   <Layout>
     <div className="hero">
@@ -28,7 +26,7 @@ const IndexPage = () => (
           <span>Customized Care </span>
           <span>for Your Performance &amp; Health </span>
           <p>
-            Doctor Rebecca Rodriguez Regner provides customized, complete and
+            Doctor Rebeccah Rodriguez Regner provides customized, complete and
             quality care for her patients and athletes.
           </p>
           <AnchorLink to="#About" title="About">
@@ -59,7 +57,7 @@ const IndexPage = () => (
             She is honored to currently serve on the USOPC Physician Advisory
             Board. Dr. Rodriguez served as the Medical Director for the high
             performance center for Team USA (11 sports) at the 2016 Olympics in
-            Rio. She Was part of the medical staff as Team USA physician at the
+            Rio. She was part of the medical staff as Team USA physician at the
             2019 Pan American Games in Lima. Peru.
           </p>
           <blockquote>
@@ -166,11 +164,6 @@ const IndexPage = () => (
       <div className="inner">
         <section id="SportsMedicine">
           <h2>Sports Medicine</h2>
-          {/* <p>
-            <span className="image right">
-              <img src={sports1} alt="{config.siteTitle}" />
-            </span>
-          </p> */}
           <p>
             Dr. Rodriguez is also a specialist in sports medicine. She completed
             a fellowship in primary care sports medicine and takes care of
