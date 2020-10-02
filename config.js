@@ -1,7 +1,7 @@
 module.exports = {
   siteTitle: 'Rebeccah Rodriguez Regner, DO', // <title>
   siteDescription:
-    'Family Medicine & Sports Medicine Physician in Encinitas and San Diego CA ', // <title>
+    'Family Medicine Doctor & Sports Medicine Physician in Encinitas and San Diego CA ', // <title>
   locations: [
     {
       name: 'Oasis MD - Encinitas',
