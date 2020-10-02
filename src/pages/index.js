@@ -146,6 +146,61 @@ const IndexPage = () => (
               Request Appointment
             </button>
           </AnchorLink>
+          <h3 className="center-title">Services</h3>
+          <div className="table-wrapper">
+            <table>
+              <tbody>
+                <tr>
+                  <td>General Physical Male and Female</td>
+                  <td>Well Woman Exam</td>
+                </tr>
+                <tr>
+                  <td>Cryotherapy</td>
+                  <td>Well Child Exams</td>
+                </tr>
+                <tr>
+                  <td>Sutures and Minor skin procedures</td>
+                  <td>Skin care</td>
+                </tr>
+                <tr>
+                  <td>Treatment of general medical conditions</td>
+                  <td>Weight Management</td>
+                </tr>
+                <tr>
+                  <td>Dietary Consultation</td>
+                  <td>Coordination of care with specialists</td>
+                </tr>
+                <tr>
+                  <td>Osteopathic Manipulative Treatment</td>
+                  <td>Sports Physicals</td>
+                </tr>
+                <tr>
+                  <td>Sports Injury</td>
+                  <td>MSK Ultrasound Guided injections</td>
+                </tr>
+                <tr>
+                  <td>Concussion Evaluation and Treatment</td>
+                  <td>Plasma Rich Protein Injections</td>
+                </tr>
+                <tr>
+                  <td>Orthobiologic Injections to come</td>
+                  <td>Basic Fracture Care</td>
+                </tr>
+                <tr>
+                  <td>Cupping, kinesio tape and bracing</td>
+                  <td>Sports Nutrition</td>
+                </tr>
+                <tr>
+                  <td>Exercise program development</td>
+                  <td>Preventive musculoskeletal health</td>
+                </tr>
+                <tr>
+                  <td>Body mechanics and mobility assessment</td>
+                  <td>Imaging Services (Xray and MRI, MSK US)</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -201,6 +256,7 @@ const IndexPage = () => (
               </div>
             </div>
           </div>
+
           <h3 className="center-title">Organization Memberships</h3>
           <div className="table-wrapper">
             <table>
