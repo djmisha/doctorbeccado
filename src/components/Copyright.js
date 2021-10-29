@@ -10,7 +10,7 @@ export default function Copyright() {
       </li>
       <li>
         <a href="https://asburymediagroup.com" target="_blank" rel="noreferrer">
-          Web Design
+          Web Design &amp; Development
         </a>{' '}
         by Asbury Media Group
       </li>

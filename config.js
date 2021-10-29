@@ -22,9 +22,11 @@ module.exports = {
       phoneURL: 'tel:+17602284798',
     },
   ],
-
-  manifestName: 'Rebeccah',
-  manifestShortName: 'rebeccah', // max 12 characters
+  phoneNumber: '(760) 846-1654',
+  phoneURL: 'tel:+17608461654',
+  // Manifest
+  manifestName: 'Rebeccah Rodriguez Regner, DO',
+  manifestShortName: 'doctorbeccado.com', // max 12 characters
   manifestStartUrl: '/',
   manifestBackgroundColor: '#663399',
   manifestThemeColor: '#663399',
@@ -33,7 +35,7 @@ module.exports = {
   // pathPrefix: `/gatsby-starter-phantom/`, // This path is subpath of your hosting https://domain/portfolio
   heading: 'Rebeccah R. Rodriguez, DO',
   subHeading: 'Family and Sport Medicine ',
-  // social
+  // Social
   socialLinks: [
     {
       icon: 'fa-twitter',

@@ -3,6 +3,7 @@ import ContactForm from './ContactForm';
 import Location from './Location';
 import Social from './Social';
 import Copyright from './Copyright';
+import Phone from './Phone';
 
 export default function Footer() {
   return (
@@ -14,13 +15,13 @@ export default function Footer() {
           <br></br>
           <Location />
           <br></br>
-          <br></br>
-          <h4>Connect with me!</h4>
-          <Social />
+          <Phone />
+        <br></br>
+        <h4>Connect with me!</h4>
+        <Social />
         </div>
       </div>
       <Copyright />
-      {/* </div> */}
     </footer>
   );
 }
