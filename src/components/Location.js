@@ -12,10 +12,10 @@ export default function Location() {
               <span className="label">{name}</span>
               <div>
                 <a href={mapURL} title="name" target="blank" rel="noreferrer">
-                  <span>{address}</span>
+                <i class="fa fa-map-marker" aria-hidden="true"></i> <span>{address}</span>
                 </a>
               </div>
-              <p className="hours">Office Hours: {hours}</p>
+              <p className="hours"><i class="fa fa-clock-o" aria-hidden="true"></i> Office Hours: {hours}</p>
             </li>
           );
         })}

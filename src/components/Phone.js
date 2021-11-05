@@ -6,7 +6,7 @@ const Phone = () => {
     <>
       <div className="nav-phone">
         <a href={config.phoneURL} title="phone">
-         <i className="fa fa-phone" /> <span className="label">{config.phoneNumber}</span>
+         <i className="fa fa-mobile" /> <span className="label">{config.phoneNumber}</span>
         </a>
       </div>
     </>

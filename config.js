@@ -24,6 +24,7 @@ module.exports = {
   ],
   phoneNumber: '(760) 846-1654',
   phoneURL: 'tel:+17608461654',
+  patientLoginURL: 'https://patient.klara.com/#/login',
   // Manifest
   manifestName: 'Rebeccah Rodriguez Regner, DO',
   manifestShortName: 'doctorbeccado.com', // max 12 characters

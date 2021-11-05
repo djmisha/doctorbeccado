@@ -4,6 +4,7 @@ import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import Location from './Location';
 import Social from './Social';
 import Phone from './Phone';
+import PatientLogin from './PatientLogin';
 
 export default function Nav({ onClose = () => {} }) {
   return (
@@ -90,6 +91,7 @@ export default function Nav({ onClose = () => {} }) {
           </li>
         </ul>
         <Phone />
+        <PatientLogin />
         <div className="nav-locations">
           <Location />
         </div>
