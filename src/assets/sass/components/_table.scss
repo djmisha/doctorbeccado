@@ -9,6 +9,7 @@
 .table-wrapper {
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
+  margin: 0 0 _size(element-margin) 0;
 
   .table-flex {
     display: flex;
@@ -27,7 +28,6 @@
       border-right: 0;
       width: 100%;
       padding: 0.25em 0.75em 0.25em 0.75em;
-
     }
   }
 }
