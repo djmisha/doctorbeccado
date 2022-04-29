@@ -354,7 +354,6 @@ const IndexPage = () => (
         </p>
 
         <h3 className="center-title">Athletic Trainer Services</h3>
-        <h4></h4>
           <div className="table-wrapper">
             <table>
               <tbody>
