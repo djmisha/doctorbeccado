@@ -2,6 +2,7 @@ import React from 'react';
 import config from '../../config';
 import Layout from '../components/Layout';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
+import { Link } from 'gatsby';
 
 import hero from '../assets/images/hero.jpg';
 import bgsports from '../assets/images/bg-sports.jpg';
@@ -16,7 +17,7 @@ import logo2 from '../assets/images/logo-2.png';
 import logo3 from '../assets/images/logo-3.png';
 import logo4 from '../assets/images/logo-4.png';
 import logo5 from '../assets/images/logo-5.png';
-import { Link } from 'gatsby';
+import joshua from '../assets/images/joshua.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -115,7 +116,6 @@ const IndexPage = () => (
               <img src={family1} alt="{config.siteTitle}" />
             </span>
           </p>
-
           <p>
             Dr. Rodriguez is a Primary Care Physician that provides
             comprehensive quality healthcare for the entire family. Dr.
@@ -201,6 +201,31 @@ const IndexPage = () => (
               </tbody>
             </table>
           </div>
+          <h3>
+            <br></br>
+            <br></br>Review your experience 
+          </h3>
+          <p>
+            <span className="please-review">
+              <i className="fa fa-thumbs-up" />
+            </span>
+          </p>
+          <p>
+            Thank you for visiting my website. I hope it gives a small insight
+            to my educational training, clinical experience, and passion to help
+            people. If you are a current patient, I would greatly appreciate 30
+            seconds of your time to write a review about your office experience!
+          </p>
+          <Link
+            rel="noreferrer noopener"
+            title="Write a Review"
+            external="true"
+            className="button"
+            target="_blank"
+            to="https://www.google.com/search?hl=en-US&gl=us&q=Dr.+Becca+Rodriguez+Regner,+499+N+El+Camino+Real+Suite+C+-200,+Encinitas,+CA+92024&ludocid=3082030671131112221&lsig=AB86z5UfD36msj8MLGLMv7kbUQ0W#lrd=0x80dc0b85607240bf:0x2ac59290eba0f31d,3"
+          >
+            Write A Review
+          </Link>
         </div>
       </div>
     </div>
@@ -215,6 +240,7 @@ const IndexPage = () => (
       </div>
       <img src={bgsports} alt="Hero" />
     </div>
+
     <div className="main">
       <div className="inner">
         <section id="SportsMedicine">
@@ -308,26 +334,66 @@ const IndexPage = () => (
               </tbody>
             </table>
           </div>
-          <h3>
-            <br></br>
-            <br></br>Write a Review
-          </h3>
-          <p>
-            Thank you for visiting my website. I hope it gives a small insight
-            to my educational training, clinical experience, and passion to help
-            people. If you are a current patient, I would greatly appreciate 30
-            seconds of your time to write a review about your office experience!
-          </p>
-          <Link
-            rel="noreferrer"
-            title="Write a Review"
-            external="true"
-            className="button"
-            target="_blank"
-            to="https://www.google.com/search?hl=en-US&gl=us&q=Dr.+Becca+Rodriguez+Regner,+499+N+El+Camino+Real+Suite+C+-200,+Encinitas,+CA+92024&ludocid=3082030671131112221&lsig=AB86z5UfD36msj8MLGLMv7kbUQ0W#lrd=0x80dc0b85607240bf:0x2ac59290eba0f31d,3"
-          >
-            Write A Review
-          </Link>
+         
+        </section>
+        <section id="AthleticTraining">
+        <h2>Certified Athletic Trainer</h2>
+        <h3>Meet Joshua Koeplin-Day</h3>
+        <p>
+          <span className="image right">
+            <img src={joshua} alt="Joshua Koeplin-Day" />
+          </span>
+        </p>
+        <p>Joshua Koeplin-Day is currently a Physician Extender and Athletic Trainer at Oasis MD Lifestyle Healthcare. He grew up in Sacramento and moved to San Diego in 2010, where he earned a B.S. in Kinesiology with an emphasis in Athletic Training as well as a M.A. in Kinesiology with an emphasis in Rehabilitation Science. His research on fitness trackers was published in the journal of PLOS One in 2016. He has been a certified Athletic Trainer for 10 years and was the Head Athletic Trainer at the University of Saint Katherine for 5 years. 
+        </p>
+        <p>
+        Additionally, he taught introductory and advanced athletic training courses as an adjunct professor for 5 years. Josh has worked with a variety of sports and sports organizations, including the X-Games, San Diego Ballet, and San Diego Legion (Major League Rugby). 
+        </p>
+        <p>
+        He is also involved in the San Diego community giving lectures, writing academic papers, designing medical covid protocols for local organizations, and supporting high school athletes with the San Diego Sports Medicine Foundation. In Josh’s spare time, he enjoys trying new foods and exploring new adventures with his lovely wife. 
+        </p>
+
+        <h3 className="center-title">Athletic Trainer Services</h3>
+        <h4></h4>
+          <div className="table-wrapper">
+            <table>
+              <tbody>
+                <tr>
+                  <td>Sports Rehabilitation</td>
+                  <td>Evaluation, care, and prevention of sports injuries</td>
+                </tr>
+                <tr>
+                  <td>Athletic Training for sports rehabilitation and return to play</td>
+                  <td>Concussion protocol</td>
+                </tr>
+                <tr>
+                  <td>Cupping Rehabilitation</td>
+                  <td>Evaluation of body mechanics </td>
+                </tr>
+                <tr>
+                  <td>Soft Tissue massage</td>
+                  <td>Proprioceptive Neuromuscular Facilitation (PNF) manipulation</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <section className="trust-bar">
+          <div className="t-item">
+            <i className="fa fa-television" />
+            <span>Telemedicine Appointments</span>
+            <p>See your doctor by video or phone</p>
+          </div>
+          <div className="t-item">
+            <i className="fa fa-check-square-o" />
+            <span>Office Safely Protocols</span>
+            <p>Your saftey is our priority</p>
+          </div>
+          <div className="t-item">
+            <i className="fa fa-star" />
+            <span>Top Rated Doctor</span>
+            <p>5 stars according to our patients</p>
+          </div>
         </section>
       </div>
     </div>

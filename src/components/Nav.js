@@ -7,83 +7,49 @@ import Phone from './Phone';
 import PatientLogin from './PatientLogin';
 
 export default function Nav({ onClose = () => {} }) {
+  const handleClick = (e) => {
+    e.preventDefault();
+    onClose();
+  }
   return (
     <nav id="menu">
       <div className="inner">
         <ul>
           <li>
-            <button
-              onClick={e => {
-                e.preventDefault();
-                onClose();
-              }}
-              onKeyDown={e => {
-                e.preventDefault();
-                onClose();
-              }}
-            >
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
               <Link to="/">Home</Link>
             </button>
           </li>
           <li>
-            <button
-              onClick={e => {
-                e.preventDefault();
-                onClose();
-              }}
-              onKeyDown={e => {
-                e.preventDefault();
-                onClose();
-              }}
-            >
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
               <AnchorLink to="#About" title="About">
                 <span>About</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button
-              onClick={e => {
-                e.preventDefault();
-                onClose();
-              }}
-              onKeyDown={e => {
-                e.preventDefault();
-                onClose();
-              }}
-            >
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
               <AnchorLink to="#FamilyMedicine" title="FamilyMedicine">
                 <span>Family Medicine</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button
-              onClick={e => {
-                e.preventDefault();
-                onClose();
-              }}
-              onKeyDown={e => {
-                e.preventDefault();
-                onClose();
-              }}
-            >
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
               <AnchorLink to="#SportsMedicine" title="SportsMedicine">
                 <span>Sports Medicine</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button
-              onClick={e => {
-                e.preventDefault();
-                onClose();
-              }}
-              onKeyDown={e => {
-                e.preventDefault();
-                onClose();
-              }}
-            >
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+              <AnchorLink to="#AthleticTraining" title="AthleticTraining">
+                <span>Athletic Training</span>
+              </AnchorLink>
+            </button>
+          </li>
+          <li>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
               <AnchorLink to="#RequestAppointment" title="Request Appointment">
                 <span>Request Appointment</span>
               </AnchorLink>
