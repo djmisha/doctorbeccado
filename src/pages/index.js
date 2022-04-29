@@ -148,58 +148,54 @@ const IndexPage = () => (
           </AnchorLink>
           <h3 className="center-title">Services</h3>
           <div className="table-wrapper">
-            <table>
-              <tbody>
-                <tr>
-                  <td>General Physical Male and Female</td>
-                  <td>Well Woman Exam</td>
-                </tr>
-                <tr>
-                  <td>Cryotherapy</td>
-                  <td>Well Child Exams</td>
-                </tr>
-                <tr>
-                  <td>Sutures and Minor skin procedures</td>
-                  <td>Skin care</td>
-                </tr>
-                <tr>
-                  <td>Treatment of general medical conditions</td>
-                  <td>Weight Management</td>
-                </tr>
-                <tr>
-                  <td>Dietary Consultation</td>
-                  <td>Coordination of care with specialists</td>
-                </tr>
-                <tr>
-                  <td>Osteopathic Manipulative Treatment</td>
-                  <td>Sports Physicals</td>
-                </tr>
-                <tr>
-                  <td>Sports Injury</td>
-                  <td>MSK Ultrasound Guided injections</td>
-                </tr>
-                <tr>
-                  <td>Concussion Evaluation and Treatment</td>
-                  <td>Plasma Rich Protein Injections</td>
-                </tr>
-                <tr>
-                  <td>Orthobiologic Injections to come</td>
-                  <td>Basic Fracture Care</td>
-                </tr>
-                <tr>
-                  <td>Cupping, kinesio tape and bracing</td>
-                  <td>Sports Nutrition</td>
-                </tr>
-                <tr>
-                  <td>Exercise program development</td>
-                  <td>Preventive musculoskeletal health</td>
-                </tr>
-                <tr>
-                  <td>Body mechanics and mobility assessment</td>
-                  <td>Imaging Services (Xray and MRI, MSK US)</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className='table-flex'>
+              <div>General Physical Male and Female</div>
+              <div>Well Woman Exam</div>
+            </div>
+            <div className='table-flex'>
+              <div>Cryotherapy</div>
+              <div>Well Child Exams</div>
+            </div>
+            <div className='table-flex'>
+              <div>Sutures and Minor skin procedures</div>
+              <div>Skin care</div>
+            </div>
+            <div className='table-flex'>
+              <div>Treatment of general medical conditions</div>
+              <div>Weight Management</div>
+            </div>
+            <div className='table-flex'>
+              <div>Dietary Consultation</div>
+              <div>Coordination of care with specialists</div>
+            </div>
+            <div className='table-flex'>
+              <div>Osteopathic Manipulative Treatment</div>
+              <div>Sports Physicals</div>
+            </div>
+            <div className='table-flex'>
+              <div>Sports Injury</div>
+              <div>MSK Ultrasound Guided injections</div>
+            </div>
+            <div className='table-flex'>
+              <div>Concussion Evaluation and Treatment</div>
+              <div>Plasma Rich Protein Injections</div>
+            </div>
+            <div className='table-flex'>
+              <div>Orthobiologic Injections to come</div>
+              <div>Basic Fracture Care</div>
+            </div>
+            <div className='table-flex'>
+              <div>Cupping, kinesio tape and bracing</div>
+              <div>Sports Nutrition</div>
+            </div>
+            <div className='table-flex'>
+              <div>Exercise program development</div>
+              <div>Preventive musculoskeletal health</div>
+            </div>
+            <div className='table-flex'>
+              <div>Body mechanics and mobility assessment</div>
+              <div>Imaging Services (Xray and MRI, MSK US)</div>
+            </div>
           </div>
           <h3>
             <br></br>
@@ -285,54 +281,50 @@ const IndexPage = () => (
 
           <h3 className="center-title">Organization Memberships</h3>
           <div className="table-wrapper">
-            <table>
-              <tbody>
-                <tr>
-                  <td>American Osteopathic Association</td>
-                  <td>Member 2006 - Present</td>
-                </tr>
-                <tr>
-                  <td>American Osteopathic Association of Sports Medicine</td>
-                  <td>Member 2009 - Present, Vice President </td>
-                </tr>
-                <tr>
-                  <td>American College of Osteopathic Family Physicians</td>
-                  <td>
-                    Member 2006 - Present, National Procedural Committee Member.
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                    American College of Osteopathic Family Physicians California
-                    State Society
-                  </td>
-                  <td> Member 2009 - Present, Board Member</td>
-                </tr>
-                <tr>
-                  <td>Team USA Physician</td>
-                  <td>
-                    US Olympic And Paralympic Training Center Team Physician
-                    2009-2020
-                  </td>
-                </tr>
-                <tr>
-                  <td>USA Women’s Waterpolo</td>
-                  <td>Team Physician 2016 - Present </td>
-                </tr>
-                <tr>
-                  <td>USA Rugby</td>
-                  <td>Team Physician 2009 - Present </td>
-                </tr>
-                <tr>
-                  <td>San Diego Legion</td>
-                  <td>Team Physician 2009 - Present </td>
-                </tr>
-                <tr>
-                  <td>San Diego Ballet</td>
-                  <td>Company Physician 2009 - Present </td>
-                </tr>
-              </tbody>
-            </table>
+            <div className='table-flex'>
+              <div>American Osteopathic Association</div>
+              <div>Member 2006 - Present</div>
+            </div>
+            <div className='table-flex'>
+              <div>American Osteopathic Association of Sports Medicine</div>
+              <div>Member 2009 - Present, Vice President </div>
+            </div>
+            <div className='table-flex'>
+              <div>American College of Osteopathic Family Physicians</div>
+              <div>
+                Member 2006 - Present, National Procedural Committee Member.
+              </div>
+            </div>
+            <div className='table-flex'>
+              <div>
+                American College of Osteopathic Family Physicians California
+                State Society
+              </div>
+              <div> Member 2009 - Present, Board Member</div>
+            </div>
+            <div className='table-flex'>
+              <div>Team USA Physician</div>
+              <div>
+                US Olympic And Paralympic Training Center Team Physician
+                2009-2020
+              </div>
+            </div>
+            <div className='table-flex'>
+              <div>USA Women’s Waterpolo</div>
+              <div>Team Physician 2016 - Present </div>
+            </div>
+            <div className='table-flex'>
+              <div>USA Rugby</div>
+              <div>Team Physician 2009 - Present </div>
+            </div>
+            <div className='table-flex'>
+              <div>San Diego Legion</div>
+              <div>Team Physician 2009 - Present </div>
+            </div>
+            <div className='table-flex'>
+              <div>San Diego Ballet</div>
+              <div>Company Physician 2009 - Present </div>
+            </div>
           </div>
          
         </section>
@@ -344,37 +336,33 @@ const IndexPage = () => (
             <img src={joshua} alt="Joshua Koeplin-Day" />
           </span>
         </p>
-        <p>Joshua Koeplin-Day is currently a Physician Extender and Athletic Trainer at Oasis MD Lifestyle Healthcare. He grew up in Sacramento and moved to San Diego in 2010, where he earned a B.S. in Kinesiology with an emphasis in Athletic Training as well as a M.A. in Kinesiology with an emphasis in Rehabilitation Science. His research on fitness trackers was published in the journal of PLOS One in 2016. He has been a certified Athletic Trainer for 10 years and was the Head Athletic Trainer at the University of Saint Katherine for 5 years. 
+        <p>
+          Joshua Koeplin-Day is currently a Physician Extender and Athletic Trainer at Oasis MD Lifestyle Healthcare. He grew up in Sacramento and moved to San Diego in 2010, where he earned a B.S. in Kinesiology with an emphasis in Athletic Training as well as a M.A. in Kinesiology with an emphasis in Rehabilitation Science. His research on fitness trackers was published in the journal of PLOS One in 2016. He has been a certified Athletic Trainer for 10 years and was the Head Athletic Trainer at the University of Saint Katherine for 5 years. 
         </p>
         <p>
-        Additionally, he taught introductory and advanced athletic training courses as an adjunct professor for 5 years. Josh has worked with a variety of sports and sports organizations, including the X-Games, San Diego Ballet, and San Diego Legion (Major League Rugby). 
+          Additionally, he taught introductory and advanced athletic training courses as an adjunct professor for 5 years. Josh has worked with a variety of sports and sports organizations, including the X-Games, San Diego Ballet, and San Diego Legion (Major League Rugby). 
         </p>
         <p>
-        He is also involved in the San Diego community giving lectures, writing academic papers, designing medical covid protocols for local organizations, and supporting high school athletes with the San Diego Sports Medicine Foundation. In Josh’s spare time, he enjoys trying new foods and exploring new adventures with his lovely wife. 
+          He is also involved in the San Diego community giving lectures, writing academic papers, designing medical covid protocols for local organizations, and supporting high school athletes with the San Diego Sports Medicine Foundation. In Josh’s spare time, he enjoys trying new foods and exploring new adventures with his lovely wife. 
         </p>
-
         <h3 className="center-title">Athletic Trainer Services</h3>
           <div className="table-wrapper">
-            <table>
-              <tbody>
-                <tr>
-                  <td>Sports Rehabilitation</td>
-                  <td>Evaluation, care, and prevention of sports injuries</td>
-                </tr>
-                <tr>
-                  <td>Athletic Training for sports rehabilitation and return to play</td>
-                  <td>Concussion protocol</td>
-                </tr>
-                <tr>
-                  <td>Cupping Rehabilitation</td>
-                  <td>Evaluation of body mechanics </td>
-                </tr>
-                <tr>
-                  <td>Soft Tissue massage</td>
-                  <td>Proprioceptive Neuromuscular Facilitation (PNF) manipulation</td>
-                </tr>
-              </tbody>
-            </table>
+            <div className='table-flex'>
+              <div>Sports Rehabilitation</div>
+              <div>Evaluation, care, and prevention of sports injuries</div>
+            </div>
+            <div className='table-flex'>
+              <div>Athletic Training for sports rehabilitation and return to play</div>
+              <div>Concussion protocol</div>
+            </div>
+            <div className='table-flex'>
+              <div>Cupping Rehabilitation</div>
+              <div>Evaluation of body mechanics </div>
+            </div>
+            <div className='table-flex'>
+              <div>Soft Tissue massage</div>
+              <div>Proprioceptive Neuromuscular Facilitation (PNF) manipulation</div>
+            </div>
           </div>
         </section>
         <section className="trust-bar">
