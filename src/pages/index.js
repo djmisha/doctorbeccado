@@ -377,9 +377,14 @@ const IndexPage = () => (
             <p>Your saftey is our priority</p>
           </div>
           <div className="t-item">
-            <i className="fa fa-star" />
+            <i className="fa fa-star-o" />
             <span>Top Rated Doctor</span>
             <p>5 stars according to our patients</p>
+          </div>
+          <div className="t-item">
+            <i className="fa fa-comment-o" />
+            <span>Multilingual</span>
+            <p>English, Spanish and Basic American Sign Language (ASL)</p>
           </div>
         </section>
       </div>
