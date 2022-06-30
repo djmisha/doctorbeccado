@@ -319,7 +319,7 @@ const IndexPage = () => (
             </div>
             <div className='table-flex'>
               <div>San Diego Legion</div>
-              <div>Team Physician 2009 - Present </div>
+              <div>Team Physician 2009 - 2021 </div>
             </div>
             <div className='table-flex'>
               <div>San Diego Ballet</div>
