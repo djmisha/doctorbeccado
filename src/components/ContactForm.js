@@ -1,11 +1,11 @@
 import React from 'react';
-// import { navigate } from 'gatsby-link';
+import { navigate } from 'gatsby-link';
 
-// function encode(data) {
-//   return Object.keys(data)
-//     .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
-//     .join('&');
-// }
+function encode(data) {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .join('&');
+}
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -15,29 +15,21 @@ export default class Contact extends React.Component {
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
-    // console.log(this.state);
   };
 
   handleSubmit = e => {
     e.preventDefault();
-    const form = this.state;
-    console.log("submit clicked", form);
-    
-    for (let i = 0; i < form.length; i++) {
-      const element = form[i];
-      console.log(element);
-    }
-    // const form = e.target;
-    // fetch('/', {
-    //   method: 'POST',
-    //   headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-    //   body: encode({
-    //     'form-name': form.getAttribute('name'),
-    //     ...this.state,
-    //   }),
-    // })
-    //   .then(() => navigate(form.getAttribute('action')))
-    //   .catch(error => alert(error));
+    const form = e.target;
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({
+        'form-name': form.getAttribute('name'),
+        ...this.state,
+      }),
+    })
+      .then(() => navigate(form.getAttribute('action')))
+      .catch(error => alert(error));
   };
 
   render() {
