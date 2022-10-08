@@ -18,6 +18,7 @@ import logo3 from '../assets/images/logo-3.png';
 import logo4 from '../assets/images/logo-4.png';
 import logo5 from '../assets/images/logo-5.png';
 import joshua from '../assets/images/joshua.jpg';
+import chelsea from '../assets/images/chelsea.jpg';
 
 const IndexPage = () => (
   <Layout>
@@ -148,58 +149,58 @@ const IndexPage = () => (
           </AnchorLink>
           <h3 className="center-title">Services</h3>
           <div className="table-wrapper">
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>General Physical Male and Female</div>
               <div>Well Woman Exam</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Cryotherapy</div>
               <div>Well Child Exams</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Sutures and Minor skin procedures</div>
               <div>Skin care</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Treatment of general medical conditions</div>
               <div>Weight Management</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Dietary Consultation</div>
               <div>Coordination of care with specialists</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Osteopathic Manipulative Treatment</div>
               <div>Sports Physicals</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Sports Injury</div>
               <div>MSK Ultrasound Guided injections</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Concussion Evaluation and Treatment</div>
               <div>Plasma Rich Protein Injections</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Orthobiologic Injections to come</div>
               <div>Basic Fracture Care</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Cupping, kinesio tape and bracing</div>
               <div>Sports Nutrition</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Exercise program development</div>
               <div>Preventive musculoskeletal health</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Body mechanics and mobility assessment</div>
               <div>Imaging Services (Xray and MRI, MSK US)</div>
             </div>
           </div>
           <h3>
             <br></br>
-            <br></br>Review your experience 
+            <br></br>Review your experience
           </h3>
           <p>
             <span className="please-review">
@@ -281,90 +282,182 @@ const IndexPage = () => (
 
           <h3 className="center-title">Organization Memberships</h3>
           <div className="table-wrapper">
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>American Osteopathic Association</div>
               <div>Member 2006 - Present</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>American Osteopathic Association of Sports Medicine</div>
               <div>Member 2009 - Present, Vice President </div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>American College of Osteopathic Family Physicians</div>
               <div>
                 Member 2006 - Present, National Procedural Committee Member.
               </div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>
                 American College of Osteopathic Family Physicians California
                 State Society
               </div>
               <div> Member 2009 - Present, Board Member</div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>Team USA Physician</div>
               <div>
                 US Olympic And Paralympic Training Center Team Physician
                 2009-2020
               </div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>USA Women’s Waterpolo</div>
               <div>Team Physician 2016 - Present </div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>USA Rugby</div>
               <div>Team Physician 2009 - Present </div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>San Diego Legion</div>
               <div>Team Physician 2009 - 2021 </div>
             </div>
-            <div className='table-flex'>
+            <div className="table-flex">
               <div>San Diego Ballet</div>
               <div>Company Physician 2009 - Present </div>
             </div>
           </div>
-         
         </section>
-        <section id="AthleticTraining">
-        <h2>Certified Athletic Trainer</h2>
-        <h3>Meet Joshua Koeplin-Day</h3>
-        <p>
-          <span className="image right">
-            <img src={joshua} alt="Joshua Koeplin-Day" />
-          </span>
-        </p>
-        <p>
-          Joshua Koeplin-Day is currently a Physician Extender and Athletic Trainer at Oasis MD Lifestyle Healthcare. He grew up in Sacramento and moved to San Diego in 2010, where he earned a B.S. in Kinesiology with an emphasis in Athletic Training as well as a M.A. in Kinesiology with an emphasis in Rehabilitation Science. His research on fitness trackers was published in the journal of PLOS One in 2016. He has been a certified Athletic Trainer for 10 years and was the Head Athletic Trainer at the University of Saint Katherine for 5 years. 
-        </p>
-        <p>
-          Additionally, he taught introductory and advanced athletic training courses as an adjunct professor for 5 years. Josh has worked with a variety of sports and sports organizations, including the X-Games, San Diego Ballet, and San Diego Legion (Major League Rugby). 
-        </p>
-        <p>
-          He is also involved in the San Diego community giving lectures, writing academic papers, designing medical covid protocols for local organizations, and supporting high school athletes with the San Diego Sports Medicine Foundation. In Josh’s spare time, he enjoys trying new foods and exploring new adventures with his lovely wife. 
-        </p>
-        <h3 className="center-title">Athletic Trainer Services</h3>
+
+        <section id="PhysicianAssistant">
+          <h2>Certified Physician Assistant</h2>
+          <h3>Meet Chelsea Ellingson</h3>
+          <p>
+            <span className="image right">
+              <img src={chelsea} alt="Chelsea Ellingson" />
+            </span>
+          </p>
+          <p>
+            Chelsea Ellingson is a certified Physician Assistant who has
+            recently joined the team. She achieved her Bachelor's in Science
+            from UCSD and her Master's in Health Sciences from George Washington
+            University. She has practiced as a Primary Care Provider in
+            Encinitas and skilled in Sports Medicine, Women's Health, Mental
+            Health, and other common acute and chronic conditions.
+          </p>
+          <p>
+            Chelsea has always had a passion for treating athletes. She was a
+            dancer through college, assisted motocross physicians in high
+            school, worked as a physical therapy aide and assisted San Diego
+            Sports Medicine in college, and completed an Orthopedic Trauma and
+            Sports Medicine rotation during her PA program.
+          </p>
+          <p>
+            PA Ellingson is dedicated to providing quality care and takes the
+            time to listen to her patients. She strives to provide her patients
+            with the education and motivation to prevent illness and practice a
+            healthy lifestyle. When Chelsea isn't busy working, she enjoys San
+            Diego's craft beer, running, traveling, and spending time with
+            husband, dog, cat, friends and family.
+          </p>
+          <h3 className="center-title">Physician Assistant Services</h3>
+
           <div className="table-wrapper">
-            <div className='table-flex'>
-              <div>Sports Rehabilitation</div>
-              <div>Evaluation, care, and prevention of sports injuries</div>
+            <div className="table-flex">
+              <div>General Physical Male and Female</div>
+              <div>Well Woman Exam </div>
             </div>
-            <div className='table-flex'>
-              <div>Athletic Training for sports rehabilitation and return to play</div>
-              <div>Concussion protocol</div>
+            <div className="table-flex">
+              <div>Contraception (Nexplanon, IUD insertions/ removals) </div>
+              <div>Treatment of general medical conditions</div>
             </div>
-            <div className='table-flex'>
-              <div>Cupping Rehabilitation</div>
-              <div>Evaluation of body mechanics </div>
+            <div className="table-flex">
+              <div>Coordination of care with specialists</div>
+              <div>Sports Physicals</div>
             </div>
-            <div className='table-flex'>
-              <div>Soft Tissue massage</div>
-              <div>Proprioceptive Neuromuscular Facilitation (PNF) manipulation</div>
+            <div className="table-flex">
+              <div>Sports Injury</div>
+              <div>MSK injections</div>
+            </div>
+            <div className="table-flex">
+              <div>Basic Fracture Care </div>
+              <div>Cryotherapy</div>
+            </div>
+            <div className="table-flex">
+              <div>Sutures and Minor skin procedures</div>
+              <div>Concussion Evaluation and Treatment</div>
+            </div>
+            <div className="table-flex">
+              <div>Exercise program development</div>
+              <div>Preventive musculoskeletal health</div>
+            </div>
+            <div className="table-flex">
+              <div>Body mechanics and mobility assessment</div>
+              <div>Imaging Services </div>
+            </div>
+            <div className="table-flex">
+              <div>Plasma Rich Protein Injections to come</div>
+              <div>Orthobiologic Injections to come</div>
             </div>
           </div>
         </section>
+        <section id="AthleticTraining">
+          <h2>Certified Athletic Trainer</h2>
+          <h3>Meet Joshua Koeplin-Day</h3>
+          <p>
+            <span className="image right">
+              <img src={joshua} alt="Joshua Koeplin-Day" />
+            </span>
+          </p>
+          <p>
+            Joshua Koeplin-Day is currently a Physician Extender and Athletic
+            Trainer at Oasis MD Lifestyle Healthcare. He grew up in Sacramento
+            and moved to San Diego in 2010, where he earned a B.S. in
+            Kinesiology with an emphasis in Athletic Training as well as a M.A.
+            in Kinesiology with an emphasis in Rehabilitation Science. His
+            research on fitness trackers was published in the journal of PLOS
+            One in 2016. He has been a certified Athletic Trainer for 10 years
+            and was the Head Athletic Trainer at the University of Saint
+            Katherine for 5 years.
+          </p>
+          <p>
+            Additionally, he taught introductory and advanced athletic training
+            courses as an adjunct professor for 5 years. Josh has worked with a
+            variety of sports and sports organizations, including the X-Games,
+            San Diego Ballet, and San Diego Legion (Major League Rugby).
+          </p>
+          <p>
+            He is also involved in the San Diego community giving lectures,
+            writing academic papers, designing medical covid protocols for local
+            organizations, and supporting high school athletes with the San
+            Diego Sports Medicine Foundation. In Josh’s spare time, he enjoys
+            trying new foods and exploring new adventures with his lovely wife.
+          </p>
+          <h3 className="center-title">Athletic Trainer Services</h3>
+          <div className="table-wrapper">
+            <div className="table-flex">
+              <div>Sports Rehabilitation</div>
+              <div>Evaluation, care, and prevention of sports injuries</div>
+            </div>
+            <div className="table-flex">
+              <div>
+                Athletic Training for sports rehabilitation and return to play
+              </div>
+              <div>Concussion protocol</div>
+            </div>
+            <div className="table-flex">
+              <div>Cupping Rehabilitation</div>
+              <div>Evaluation of body mechanics </div>
+            </div>
+            <div className="table-flex">
+              <div>Soft Tissue massage</div>
+              <div>
+                Proprioceptive Neuromuscular Facilitation (PNF) manipulation
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section className="trust-bar">
           <div className="t-item">
             <i className="fa fa-television" />
