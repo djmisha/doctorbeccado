@@ -2,7 +2,6 @@ import React from 'react';
 import config from '../../config';
 import Layout from '../components/Layout';
 import { AnchorLink } from 'gatsby-plugin-anchor-links';
-import { Link } from 'gatsby';
 
 import hero from '../assets/images/hero.jpg';
 import bgsports from '../assets/images/bg-sports.jpg';
@@ -213,16 +212,16 @@ const IndexPage = () => (
             people. If you are a current patient, I would greatly appreciate 30
             seconds of your time to write a review about your office experience!
           </p>
-          <Link
+          <a
             rel="noreferrer noopener"
             title="Write a Review"
             external="true"
             className="button"
             target="_blank"
-            to="https://www.google.com/search?hl=en-US&gl=us&q=Dr.+Becca+Rodriguez+Regner,+499+N+El+Camino+Real+Suite+C+-200,+Encinitas,+CA+92024&ludocid=3082030671131112221&lsig=AB86z5UfD36msj8MLGLMv7kbUQ0W#lrd=0x80dc0b85607240bf:0x2ac59290eba0f31d,3"
+            href="https://www.google.com/search?hl=en-US&gl=us&q=Dr.+Becca+Rodriguez+Regner,+499+N+El+Camino+Real+Suite+C+-200,+Encinitas,+CA+92024&ludocid=3082030671131112221&lsig=AB86z5UfD36msj8MLGLMv7kbUQ0W#lrd=0x80dc0b85607240bf:0x2ac59290eba0f31d,3"
           >
             Write A Review
-          </Link>
+          </a>
         </div>
       </div>
     </div>

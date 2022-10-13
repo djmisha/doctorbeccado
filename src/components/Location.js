@@ -15,7 +15,7 @@ export default function Location() {
                 <i class="fa fa-map-marker" aria-hidden="true"></i> <span>{address}</span>
                 </a>
               </div>
-              <p className="hours"><i class="fa fa-clock-o" aria-hidden="true"></i> Office Hours: {hours}</p>
+              <p className="hours"><i className="fa fa-clock-o" aria-hidden="true"></i> Office Hours: {hours}</p>
             </li>
           );
         })}
