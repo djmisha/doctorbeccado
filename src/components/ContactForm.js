@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { navigate } from 'gatsby-link';
 
 function encode(data) {
@@ -7,32 +7,89 @@ function encode(data) {
     .join('&');
 }
 
-export default class Contact extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
+const Contact = () => {
 
-  handleChange = e => {
-    this.setState({ [e.target.name]: e.target.value });
+  let [state, setState] = useState([])
+  let [error, setError] = useState(false)
+
+  const handleChange = (e, id) => {
+    const fieldName = e.target.name;
+    const fieldValue = e.target.value; 
+    const fieldID = id;
+
+    // create input object
+    const input = {
+      [fieldName]: fieldValue,
+      "id": fieldID,
+    }
+    
+    // create new state 
+    const newState = state.map((obj) => {
+      // input data if id found
+      if(obj.id === fieldID) {
+        // update the field with new input data
+        return {...obj, [fieldName]: fieldValue}
+      }
+      return obj;
+    })
+
+    
+    let inputFoundinState = false;
+
+    // chech the state for our input id and return true if found 
+    for (let i = 0; i < state.length; i++) {
+      if(state[i].id === fieldID) inputFoundinState = true;
+    }
+
+    // update the state if input found with the state
+    if(inputFoundinState) setState([...newState]) 
+    
+    // or add the input to the current state
+    if(!inputFoundinState) setState([...state, input])
+
   };
-
-  handleSubmit = e => {
+  
+  const checkForErrors = () => {
+    if(!state || state.length < 5 || state.length === 6 ) setError(true);
+    if(state.length === 5) setError(false);
+  }
+  
+  const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
-    fetch('/', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: encode({
-        'form-name': form.getAttribute('name'),
-        ...this.state,
-      }),
-    })
+
+    checkForErrors();
+
+    if(!error) {
+      // remove id's from State 
+      const cleanData = state.map(obj => {
+        delete obj.id;
+        return obj;
+      })
+
+      let objectData = {} 
+      
+      // add values to our new data Object
+      cleanData.forEach((obj) => {
+        Object.keys(obj).forEach(key => {
+          objectData[key] = obj[key]
+        })
+      })
+
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({
+          'form-name': form.getAttribute('name'),
+          ...objectData,
+        }),
+      })
       .then(() => navigate(form.getAttribute('action')))
       .catch(error => alert(error));
+    }
+
   };
 
-  render() {
     return (
       <div id="RequestAppointment">
         <h3>Request an Appointment</h3>
@@ -43,7 +100,7 @@ export default class Contact extends React.Component {
           action="/thank-you/"
           data-netlify="true"
           data-netlify-honeypot="bot-field"
-          onSubmit={this.handleSubmit}
+          onSubmit={handleSubmit}
         >
           <div className="fields">
             {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
@@ -51,7 +108,7 @@ export default class Contact extends React.Component {
             <p hidden>
               <label>
                 Don’t fill this out:{' '}
-                <input name="bot-field" onChange={this.handleChange} />
+                <input name="bot-field" onChange={(e) => handleChange(e, 1)} />
               </label>
             </p>
 
@@ -63,7 +120,7 @@ export default class Contact extends React.Component {
                 name="fullname"
                 id="name"
                 placeholder="Full Name"
-                onChange={this.handleChange}
+                onChange={(e) => handleChange(e, 2)}
               />
               </label>
             </div>
@@ -74,7 +131,7 @@ export default class Contact extends React.Component {
                 name="email"
                 id="email"
                 placeholder="Email"
-                onChange={this.handleChange}
+                onChange={(e) => handleChange(e, 3)}
               />
               </label>
             </div>
@@ -85,7 +142,7 @@ export default class Contact extends React.Component {
                 name="phone"
                 id="phone"
                 placeholder="Phone"
-                onChange={this.handleChange}
+                onChange={(e) => handleChange(e, 4)}
               />
               </label>
             </div>
@@ -96,7 +153,7 @@ export default class Contact extends React.Component {
                   name="preffereddate"
                   id="preffereddate"
                   placeholder="Preffered Appointment Date"
-                  onChange={this.handleChange}
+                  onChange={(e) => handleChange(e, 5)}
                 />
               </label>
             </div>
@@ -106,11 +163,12 @@ export default class Contact extends React.Component {
                   name="message"
                   id="message"
                   placeholder="Message"
-                  onChange={this.handleChange}
+                  onChange={(e) => handleChange(e, 6)}
                 />
               </label>
             </div>
           </div>
+          {error && <p>Please fill out all the fields!</p>}
           <ul className="actions">
             <li>
               <input
@@ -124,4 +182,6 @@ export default class Contact extends React.Component {
       </div>
     );
   }
-}
+
+
+export default Contact;
