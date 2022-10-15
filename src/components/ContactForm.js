@@ -10,7 +10,7 @@ function encode(data) {
 const Contact = () => {
 
   let [state, setState] = useState([])
-  let [error, setError] = useState(false)
+  let [hasError, setHasError] = useState(false)
 
   const handleChange = (e, id) => {
     const fieldName = e.target.name;
@@ -50,8 +50,14 @@ const Contact = () => {
   };
   
   const checkForErrors = () => {
-    if(!state || state.length < 5 || state.length === 6 ) setError(true);
-    if(state.length === 5) setError(false);
+    if(!state || state.length < 5 || state.length === 6 ) {
+      setHasError(true)
+      return true;
+    };
+    if(state.length === 5) {
+      setHasError(false)
+      return false;
+    };
   }
   
   const handleSubmit = (e) => {
@@ -60,7 +66,7 @@ const Contact = () => {
 
     checkForErrors();
 
-    if(!error) {
+    if(!checkForErrors()) {
       // remove id's from State 
       const cleanData = state.map(obj => {
         delete obj.id;
@@ -168,7 +174,7 @@ const Contact = () => {
               </label>
             </div>
           </div>
-          {error && <p>Please fill out all the fields!</p>}
+          {hasError && <p>Please fill out all the fields!</p>}
           <ul className="actions">
             <li>
               <input
