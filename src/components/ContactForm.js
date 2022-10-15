@@ -174,7 +174,7 @@ const Contact = () => {
               </label>
             </div>
           </div>
-          {hasError && <p>Please fill out all the fields!</p>}
+          {hasError && <p className='form-error'>All fields are required. Please fill out all the fields!</p>}
           <ul className="actions">
             <li>
               <input
