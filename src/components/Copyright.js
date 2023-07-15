@@ -8,12 +8,6 @@ export default function Copyright() {
         &copy; {config.siteTitle} - {config.siteDescription}. All rights
         reserved.
       </li>
-      <li>
-        <a href="https://asburymediagroup.com" target="_blank" rel="noreferrer">
-          Web Design &amp; Development
-        </a>{' '}
-        by Asbury Media Group
-      </li>
     </ul>
   );
 }
