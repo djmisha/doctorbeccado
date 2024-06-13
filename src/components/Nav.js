@@ -57,6 +57,13 @@ export default function Nav({ onClose = () => {} }) {
           </li>
           <li>
             <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+              <AnchorLink to="#NursePractitioner" title="NursePractitioner">
+                <span>Nurse Practitioner</span>
+              </AnchorLink>
+            </button>
+          </li>
+          <li>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
               <AnchorLink to="#RequestAppointment" title="Request Appointment">
                 <span>Request Appointment</span>
               </AnchorLink>
