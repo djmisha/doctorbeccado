@@ -4,6 +4,8 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@use "sass:math";
+
 /* Form */
 
 form {
@@ -27,8 +29,6 @@ form {
       @include vendor('flex-shrink', '0');
       padding: $gutter 0 0 $gutter;
       width: calc(100% - #{$gutter * 1});
-
-@use "sass:math";
 
       &.half {
         width: calc(50% - #{$gutter * 0.5});
