@@ -153,11 +153,13 @@ sup {
   top: -0.5em;
 }
 
+@use "sass:math";
+
 blockquote {
   border-left: solid (_size(border-width) * 4) _palette(accent2);
   font-style: italic;
   margin: 0 0 _size(element-margin) 0;
-  padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4)
+  padding: math.div(_size(element-margin), 4) 0 math.div(_size(element-margin), 4)
     _size(element-margin);
   color: _palette(accent2);
 }

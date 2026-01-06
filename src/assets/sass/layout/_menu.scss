@@ -47,13 +47,15 @@
     }
 
     > ul {
+@use "sass:color";
+
       list-style: none;
       margin: 0 0 (_size(element-margin) * 2) 0;
       padding: 0;
 
       > li {
         padding: 0;
-        border-top: solid 1px transparentize(_palette(bg), 0.85);
+        border-top: solid 1px color.scale(_palette(bg), $alpha: -85%);
         background-color: transparent;
         transition: all 0.2s ease;
         border-radius: 10px;

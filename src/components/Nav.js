@@ -16,54 +16,54 @@ export default function Nav({ onClose = () => {} }) {
       <div className="inner">
         <ul>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="Home">
               <Link to="/">Home</Link>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="About">
               <AnchorLink to="#About" title="About">
                 <span>About</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="Family Medicine">
               <AnchorLink to="#FamilyMedicine" title="FamilyMedicine">
                 <span>Family Medicine</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="Sports Medicine">
               <AnchorLink to="#SportsMedicine" title="SportsMedicine">
                 <span>Sports Medicine</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="Physician Assistant">
               <AnchorLink to="#PhysicianAssistant" title="PhysicianAssistant">
                 <span>Physician Assistant</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="Athletic Training">
               <AnchorLink to="#AthleticTraining" title="AthleticTraining">
                 <span>Athletic Training</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="Nurse Practitioner">
               <AnchorLink to="#NursePractitioner" title="NursePractitioner">
                 <span>Nurse Practitioner</span>
               </AnchorLink>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)} aria-label="Request Appointment">
               <AnchorLink to="#RequestAppointment" title="Request Appointment">
                 <span>Request Appointment</span>
               </AnchorLink>

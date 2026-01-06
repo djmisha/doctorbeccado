@@ -126,6 +126,7 @@ const Contact = () => {
                 name="fullname"
                 id="name"
                 placeholder="Full Name"
+                aria-label="Full Name"
                 onChange={(e) => handleChange(e, 2)}
               />
               </label>
@@ -137,6 +138,7 @@ const Contact = () => {
                 name="email"
                 id="email"
                 placeholder="Email"
+                aria-label="Email"
                 onChange={(e) => handleChange(e, 3)}
               />
               </label>
@@ -148,6 +150,7 @@ const Contact = () => {
                 name="phone"
                 id="phone"
                 placeholder="Phone"
+                aria-label="Phone"
                 onChange={(e) => handleChange(e, 4)}
               />
               </label>
@@ -159,6 +162,7 @@ const Contact = () => {
                   name="preffereddate"
                   id="preffereddate"
                   placeholder="Preffered Appointment Date"
+                  aria-label="Preferred Appointment Date"
                   onChange={(e) => handleChange(e, 5)}
                 />
               </label>
@@ -169,6 +173,7 @@ const Contact = () => {
                   name="message"
                   id="message"
                   placeholder="Message"
+                  aria-label="Message"
                   onChange={(e) => handleChange(e, 6)}
                 />
               </label>

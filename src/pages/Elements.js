@@ -251,7 +251,7 @@ i++;
               </tbody>
               <tfoot>
                 <tr>
-                  <td colSpan="2"></td>
+                  <td colSpan="2"><span className="sr-only">Total</span></td>
                   <td>100.00</td>
                 </tr>
               </tfoot>
@@ -297,7 +297,7 @@ i++;
               </tbody>
               <tfoot>
                 <tr>
-                  <td colSpan="2"></td>
+                  <td colSpan="2"><span className="sr-only">Total</span></td>
                   <td>100.00</td>
                 </tr>
               </tfoot>

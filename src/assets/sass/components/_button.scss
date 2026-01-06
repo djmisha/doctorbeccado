@@ -47,6 +47,8 @@ button,
   }
 
   &.fit {
+@use "sass:color";
+
     width: 100%;
   }
 
@@ -56,7 +58,7 @@ button,
   }
 
   &:active {
-    background-color: transparentize(_palette(accent1), 0.9);
+    background-color: color.scale(_palette(accent1), $alpha: -90%);
   }
 
   &.small {
@@ -77,7 +79,7 @@ button,
     }
 
     &:active {
-      background-color: darken(_palette(accent1), 8);
+      background-color: color.scale(_palette(accent1), $lightness: -20%);
     }
   }
 

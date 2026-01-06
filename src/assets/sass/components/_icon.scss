@@ -42,6 +42,8 @@
     color: inherit;
 
     &:before {
+@use "sass:color";
+
       font-size: 1.1em;
     }
 
@@ -51,7 +53,7 @@
     }
 
     &:active {
-      background-color: transparentize(_palette(accent1), 0.9);
+      background-color: color.scale(_palette(accent1), $alpha: -90%);
     }
   }
 }

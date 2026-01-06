@@ -17,12 +17,14 @@
   margin: ($gutter * -1) 0 0 ($gutter * -1);
 
   article {
+@use "sass:math";
+
     @include vendor(
       'transition',
       ('transform #{$duration} #{$ease}', 'opacity #{$duration} #{$ease}')
     );
     position: relative;
-    width: calc(#{(100% / 3)} - #{$gutter * 1});
+    width: calc(#{math.div(100%, 3)} - #{$gutter * 1});
     margin: $gutter 0 0 $gutter;
 
     > .image {

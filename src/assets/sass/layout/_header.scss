@@ -68,13 +68,15 @@ body {
         display: block;
         padding: 0;
 
+@use "sass:color";
+
         a {
           display: block;
           position: relative;
           height: 3em;
           line-height: 3em;
           padding: 0 1.5em;
-          background-color: transparentize(_palette(bg), 0.5);
+          background-color: color.scale(_palette(bg), $alpha: -50%);
           border-radius: _size(border-radius);
           border: 0;
           font-size: 0.8em;
