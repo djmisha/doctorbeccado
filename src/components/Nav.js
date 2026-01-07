@@ -1,72 +1,107 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import Location from './Location';
 import Social from './Social';
 import Phone from './Phone';
 import PatientLogin from './PatientLogin';
 
 export default function Nav({ onClose = () => {} }) {
-  const handleClick = (e) => {
+  const handleClick = (e, target) => {
     e.preventDefault();
     onClose();
-  }
+    // Use setTimeout to allow menu to start closing before scroll
+    setTimeout(() => {
+      const element = document.querySelector(target);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
+
   return (
     <nav id="menu">
       <div className="inner">
         <ul>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
+            <button onClick={onClose} onKeyDown={onClose} aria-label="Home">
               <Link to="/">Home</Link>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
-              <AnchorLink to="#About" title="About">
+            <button
+              onClick={(e) => handleClick(e, '#About')}
+              onKeyDown={(e) => handleClick(e, '#About')}
+              aria-label="About"
+            >
+              <a href="#About">
                 <span>About</span>
-              </AnchorLink>
+              </a>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
-              <AnchorLink to="#FamilyMedicine" title="FamilyMedicine">
+            <button
+              onClick={(e) => handleClick(e, '#FamilyMedicine')}
+              onKeyDown={(e) => handleClick(e, '#FamilyMedicine')}
+              aria-label="Family Medicine"
+            >
+              <a href="#FamilyMedicine">
                 <span>Family Medicine</span>
-              </AnchorLink>
+              </a>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
-              <AnchorLink to="#SportsMedicine" title="SportsMedicine">
+            <button
+              onClick={(e) => handleClick(e, '#SportsMedicine')}
+              onKeyDown={(e) => handleClick(e, '#SportsMedicine')}
+              aria-label="Sports Medicine"
+            >
+              <a href="#SportsMedicine">
                 <span>Sports Medicine</span>
-              </AnchorLink>
+              </a>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
-              <AnchorLink to="#PhysicianAssistant" title="PhysicianAssistant">
+            <button
+              onClick={(e) => handleClick(e, '#PhysicianAssistant')}
+              onKeyDown={(e) => handleClick(e, '#PhysicianAssistant')}
+              aria-label="Physician Assistant"
+            >
+              <a href="#PhysicianAssistant">
                 <span>Physician Assistant</span>
-              </AnchorLink>
+              </a>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
-              <AnchorLink to="#AthleticTraining" title="AthleticTraining">
+            <button
+              onClick={(e) => handleClick(e, '#AthleticTraining')}
+              onKeyDown={(e) => handleClick(e, '#AthleticTraining')}
+              aria-label="Athletic Training"
+            >
+              <a href="#AthleticTraining">
                 <span>Athletic Training</span>
-              </AnchorLink>
+              </a>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
-              <AnchorLink to="#NursePractitioner" title="NursePractitioner">
+            <button
+              onClick={(e) => handleClick(e, '#NursePractitioner')}
+              onKeyDown={(e) => handleClick(e, '#NursePractitioner')}
+              aria-label="Nurse Practitioner"
+            >
+              <a href="#NursePractitioner">
                 <span>Nurse Practitioner</span>
-              </AnchorLink>
+              </a>
             </button>
           </li>
           <li>
-            <button onClick={e => handleClick(e)} onKeyDown={e => handleClick(e)}>
-              <AnchorLink to="#RequestAppointment" title="Request Appointment">
+            <button
+              onClick={(e) => handleClick(e, '#RequestAppointment')}
+              onKeyDown={(e) => handleClick(e, '#RequestAppointment')}
+              aria-label="Request Appointment"
+            >
+              <a href="#RequestAppointment">
                 <span>Request Appointment</span>
-              </AnchorLink>
+              </a>
             </button>
           </li>
         </ul>
@@ -80,7 +115,7 @@ export default function Nav({ onClose = () => {} }) {
       </div>
       <a
         className="close"
-        onClick={e => {
+        onClick={(e) => {
           e.preventDefault();
           onClose();
         }}

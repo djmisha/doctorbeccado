@@ -17,6 +17,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 50px;
 }
 
 section {
@@ -192,7 +193,7 @@ section {
     justify-content: center;
   }
 
-  >div {
+  > div {
     text-align: center;
     width: 25%;
     max-width: 300px;
@@ -206,7 +207,6 @@ section {
       width: 100%;
     }
 
-
     i {
       display: block;
       font-size: 4em;
@@ -219,7 +219,6 @@ section {
 
     p {
       line-height: 1.5em;
-
     }
   }
 }

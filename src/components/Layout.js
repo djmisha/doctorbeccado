@@ -1,79 +1,38 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import Helmet from 'react-helmet';
-import { StaticQuery, graphql } from 'gatsby';
 
 import '../assets/sass/main.scss';
 import Footer from './Footer';
 import Sidebar from './Sidebar';
 
-class Layout extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      isPreloaded: true,
-    };
-  }
+const Layout = ({ children }) => {
+  const [isPreloaded, setIsPreloaded] = useState(true);
 
-  componentDidMount() {
-    this.timeoutId = setTimeout(() => {
-      this.setState({ isPreloaded: false });
+  useEffect(() => {
+    const timeoutId = setTimeout(() => {
+      setIsPreloaded(false);
     }, 100);
-  }
 
-  componentWillUnmount() {
-    if (this.timeoutId) {
-      clearTimeout(this.timeoutId);
-    }
-  }
+    return () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+    };
+  }, []);
 
-  render() {
-    const { children } = this.props;
-    const { isPreloaded } = this.state;
-    return (
-      <StaticQuery
-        query={graphql`
-          query SiteTitleQuery {
-            site {
-              siteMetadata {
-                title
-              }
-            }
-          }
-        `}
-        render={data => (
-          <>
-            <Helmet
-              title={data.site.siteMetadata.title}
-              meta={[
-                {
-                  name: 'description',
-                  content:
-                    'Family Medicine & Sports Medicine Physician in Encinitas and San Diego CA',
-                },
-                {
-                  name: 'keywords',
-                  content:
-                    'doctor, san diego, encinitas, family medicine, sports medicine, primary care',
-                },
-              ]}
-            >
-              <html lang="en" />
-            </Helmet>
-            <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
-              <div id="wrapper">
-                <Sidebar />
+  return (
+    <>
+      <div className={isPreloaded ? 'main-body is-preload' : 'main-body'}>
+        <div id="wrapper">
+          <Sidebar />
 
-                {children}
-                <Footer />
-              </div>
-            </div>
-          </>
-        )}
-      />
-    );
-  }
-}
+          {children}
+          <Footer />
+        </div>
+      </div>
+    </>
+  );
+};
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

@@ -4,6 +4,8 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@use "sass:color";
+
 /* Menu */
 
 #wrapper {
@@ -53,7 +55,7 @@
 
       > li {
         padding: 0;
-        border-top: solid 1px transparentize(_palette(bg), 0.85);
+        border-top: solid 1px color.scale(_palette(bg), $alpha: -85%);
         background-color: transparent;
         transition: all 0.2s ease;
         border-radius: 10px;

@@ -4,6 +4,8 @@
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
 
+@use "sass:math";
+
 /* Type */
 
 body,
@@ -157,7 +159,7 @@ blockquote {
   border-left: solid (_size(border-width) * 4) _palette(accent2);
   font-style: italic;
   margin: 0 0 _size(element-margin) 0;
-  padding: (_size(element-margin) / 4) 0 (_size(element-margin) / 4)
+  padding: math.div(_size(element-margin), 4) 0 math.div(_size(element-margin), 4)
     _size(element-margin);
   color: _palette(accent2);
 }
