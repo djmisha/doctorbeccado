@@ -3,84 +3,81 @@ import { navigate } from 'gatsby';
 
 function encode(data) {
   return Object.keys(data)
-    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
+    .map((key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key]))
     .join('&');
 }
 
 const Contact = () => {
-
-  let [state, setState] = useState([])
-  let [hasError, setHasError] = useState(false)
+  let [state, setState] = useState([]);
+  let [hasError, setHasError] = useState(false);
 
   const handleChange = (e, id) => {
     const fieldName = e.target.name;
-    const fieldValue = e.target.value; 
+    const fieldValue = e.target.value;
     const fieldID = id;
 
     // create input object
     const input = {
       [fieldName]: fieldValue,
-      "id": fieldID,
-    }
-    
-    // create new state 
+      id: fieldID,
+    };
+
+    // create new state
     const newState = state.map((obj) => {
       // input data if id found
-      if(obj.id === fieldID) {
+      if (obj.id === fieldID) {
         // update the field with new input data
-        return {...obj, [fieldName]: fieldValue}
+        return { ...obj, [fieldName]: fieldValue };
       }
       return obj;
-    })
+    });
 
-    
     let inputFoundinState = false;
 
-    // chech the state for our input id and return true if found 
+    // chech the state for our input id and return true if found
     for (let i = 0; i < state.length; i++) {
-      if(state[i].id === fieldID) inputFoundinState = true;
+      if (state[i].id === fieldID) inputFoundinState = true;
     }
 
     // update the state if input found with the state
-    if(inputFoundinState) setState([...newState]) 
-    
-    // or add the input to the current state
-    if(!inputFoundinState) setState([...state, input])
+    if (inputFoundinState) setState([...newState]);
 
+    // or add the input to the current state
+    if (!inputFoundinState) setState([...state, input]);
   };
-  
+
   const checkForErrors = () => {
-    if(!state || state.length < 5 || state.length === 6 ) {
-      setHasError(true)
+    if (!state || state.length < 5 || state.length === 6) {
+      setHasError(true);
       return true;
-    };
-    if(state.length === 5) {
-      setHasError(false)
+    }
+    if (state.length === 5) {
+      setHasError(false);
       return false;
-    };
-  }
-  
+    }
+  };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;
 
     checkForErrors();
 
-    if(!checkForErrors()) {
-      // remove id's from State 
-      const cleanData = state.map(obj => {
+    if (!checkForErrors()) {
+      // remove id's from State
+      const cleanData = state.map((obj) => {
         delete obj.id;
         return obj;
-      })
+      });
 
-      let objectData = {} 
-      
+      let objectData = {};
+
       // add values to our new data Object
       cleanData.forEach((obj) => {
-        Object.keys(obj).forEach(key => {
-          objectData[key] = obj[key]
-        })
-      })
+        Object.keys(obj).forEach((key) => {
+          objectData[key] = obj[key];
+        });
+      });
 
       fetch('/', {
         method: 'POST',
@@ -90,37 +87,35 @@ const Contact = () => {
           ...objectData,
         }),
       })
-      .then(() => navigate(form.getAttribute('action')))
-      .catch(error => alert(error));
+        .then(() => navigate(form.getAttribute('action')))
+        .catch((error) => alert(error));
     }
-
   };
 
-    return (
-      <div id="RequestAppointment">
-        <h3>Request an Appointment</h3>
-        <p>Please fill out this contact form to request an appointment.</p>
-        <form
-          name="doctorbeccado.com"
-          method="post"
-          action="/thank-you/"
-          data-netlify="true"
-          data-netlify-honeypot="bot-field"
-          onSubmit={handleSubmit}
-        >
-          <div className="fields">
-            {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
-            <input type="hidden" name="form-name" value="contact" />
-            <p hidden>
-              <label>
-                Don’t fill this out:{' '}
-                <input name="bot-field" onChange={(e) => handleChange(e, 1)} />
-              </label>
-            </p>
+  return (
+    <div id="RequestAppointment">
+      <h3>Request an Appointment</h3>
+      <p>Please fill out this contact form to request an appointment.</p>
+      <form
+        name="doctorbeccado.com"
+        method="post"
+        action="/thank-you/#wrapper"
+        data-netlify="true"
+        data-netlify-honeypot="bot-field"
+        onSubmit={handleSubmit}
+      >
+        <div className="fields">
+          {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
+          <input type="hidden" name="form-name" value="contact" />
+          <p hidden>
+            <label>
+              Don’t fill this out:{' '}
+              <input name="bot-field" onChange={(e) => handleChange(e, 1)} />
+            </label>
+          </p>
 
-            <div className="field half">
-            
-             <label>
+          <div className="field half">
+            <label>
               <input
                 type="text"
                 name="fullname"
@@ -129,9 +124,9 @@ const Contact = () => {
                 aria-label="Full Name"
                 onChange={(e) => handleChange(e, 2)}
               />
-              </label>
-            </div>
-            <div className="field half">
+            </label>
+          </div>
+          <div className="field half">
             <label>
               <input
                 type="email"
@@ -141,10 +136,10 @@ const Contact = () => {
                 aria-label="Email"
                 onChange={(e) => handleChange(e, 3)}
               />
-              </label>
-            </div>
-            <div className="field half">
-             <label>
+            </label>
+          </div>
+          <div className="field half">
+            <label>
               <input
                 type="phone"
                 name="phone"
@@ -153,46 +148,49 @@ const Contact = () => {
                 aria-label="Phone"
                 onChange={(e) => handleChange(e, 4)}
               />
-              </label>
-            </div>
-            <div className="field half">
-              <label>
-                <input
-                  type="text"
-                  name="preffereddate"
-                  id="preffereddate"
-                  placeholder="Preffered Appointment Date"
-                  aria-label="Preferred Appointment Date"
-                  onChange={(e) => handleChange(e, 5)}
-                />
-              </label>
-            </div>
-            <div className="field">
-              <label>
-                <textarea
-                  name="message"
-                  id="message"
-                  placeholder="Message"
-                  aria-label="Message"
-                  onChange={(e) => handleChange(e, 6)}
-                />
-              </label>
-            </div>
+            </label>
           </div>
-          {hasError && <p className='form-error'>All fields are required. Please fill out all the fields!</p>}
-          <ul className="actions">
-            <li>
+          <div className="field half">
+            <label>
               <input
-                type="submit"
-                value="Submit"
-                className="secondary button icon fa-paper-plane"
+                type="text"
+                name="preffereddate"
+                id="preffereddate"
+                placeholder="Preffered Appointment Date"
+                aria-label="Preferred Appointment Date"
+                onChange={(e) => handleChange(e, 5)}
               />
-            </li>
-          </ul>
-        </form>
-      </div>
-    );
-  }
-
+            </label>
+          </div>
+          <div className="field">
+            <label>
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Message"
+                aria-label="Message"
+                onChange={(e) => handleChange(e, 6)}
+              />
+            </label>
+          </div>
+        </div>
+        {hasError && (
+          <p className="form-error">
+            All fields are required. Please fill out all the fields!
+          </p>
+        )}
+        <ul className="actions">
+          <li>
+            <input
+              type="submit"
+              value="Submit"
+              className="secondary button icon fa-paper-plane"
+            />
+          </li>
+        </ul>
+      </form>
+    </div>
+  );
+};
 
 export default Contact;
