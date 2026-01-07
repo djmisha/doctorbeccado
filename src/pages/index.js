@@ -1,7 +1,6 @@
 import React from 'react';
 import config from '../../config';
 import Layout from '../components/Layout';
-import { AnchorLink } from 'gatsby-plugin-anchor-links';
 
 import hero from '../assets/images/hero.jpg';
 import bgsports from '../assets/images/bg-sports.jpg';
@@ -31,9 +30,9 @@ const IndexPage = () => (
             Doctor Rebeccah Rodriguez Regner provides customized, complete and
             quality care for her patients and athletes.
           </p>
-          <AnchorLink to="#About" title="About">
+          <a href="#About">
             <button className="button">Learn More</button>
-          </AnchorLink>
+          </a>
         </div>
       </div>
       <img src={hero} alt="Hero" />
@@ -142,11 +141,11 @@ const IndexPage = () => (
             family. Dr. Rodriguez embodies her Osteopathic medical training in
             treating the whole person's mind, body and spirit.
           </p>
-          <AnchorLink to="#RequestAppointment" title="Request Appointment">
+          <a href="#RequestAppointment">
             <button className="button icon fa-calendar-alt">
               Request Appointment
             </button>
-          </AnchorLink>
+          </a>
           <h3 className="center-title">Services</h3>
           <div className="table-wrapper">
             <div className="table-flex">
@@ -467,31 +466,38 @@ const IndexPage = () => (
             </span>
           </p>
           <p>
-            Jimmy Hao is a certified Family Nurse Practitioner who achieved his Bachelor of Science
-            in Nursing from University of San Francisco and his Master of Science in Nursing from 
-            Simmons University in Boston. Prior to nursing, he served in the US Marine Corps for six 
-            years as a HMMWV driver. As an RN, he worked for eight years at many prestigious hospitals 
-            around California, including the VA, Stanford, Kaiser, and Sharp; and has experience in the 
-            Psychiatric unit, Cardiac unit, ER, and post-surgical recovery. He is passionate about Family
-            Medicine, Sports Medicine, Dermatology, Women's health and hormone health, Aesthetics, and
-            Psychiatry. He most recently completed a Family and Sports medicine rotation and worked with 
-            a variety of different athletes including Olympic archers, X-Games motocross riders, Formula 
-            one drivers, cheerleaders, and San Diego ballet dancers. He has completed training in aesthetics, 
-            including Botox and Filler injections, and laser procedures, as well as Pellecome hormone 
-            pellet procedures.
+            Jimmy Hao is a certified Family Nurse Practitioner who achieved his
+            Bachelor of Science in Nursing from University of San Francisco and
+            his Master of Science in Nursing from Simmons University in Boston.
+            Prior to nursing, he served in the US Marine Corps for six years as
+            a HMMWV driver. As an RN, he worked for eight years at many
+            prestigious hospitals around California, including the VA, Stanford,
+            Kaiser, and Sharp; and has experience in the Psychiatric unit,
+            Cardiac unit, ER, and post-surgical recovery. He is passionate about
+            Family Medicine, Sports Medicine, Dermatology, Women's health and
+            hormone health, Aesthetics, and Psychiatry. He most recently
+            completed a Family and Sports medicine rotation and worked with a
+            variety of different athletes including Olympic archers, X-Games
+            motocross riders, Formula one drivers, cheerleaders, and San Diego
+            ballet dancers. He has completed training in aesthetics, including
+            Botox and Filler injections, and laser procedures, as well as
+            Pellecome hormone pellet procedures.
           </p>
           <p>
-            Jimmy focuses on providing the most up-to-date evidence-based care, increasing access and 
-            affordability to healthcare for all, and holistic medicine that focuses on the whole individual
-            and their unique mental, physical, and spiritual needs throughout the lifespan. He is 
-            dedicated to being an advocate for you and your family by spending quality time and 
-            building a professional collaborative team of experts to help you reach your healthcare 
-            goals, whether that is to live longer, be stronger physically and mentally, or to feel 
-            and look your best.
+            Jimmy focuses on providing the most up-to-date evidence-based care,
+            increasing access and affordability to healthcare for all, and
+            holistic medicine that focuses on the whole individual and their
+            unique mental, physical, and spiritual needs throughout the
+            lifespan. He is dedicated to being an advocate for you and your
+            family by spending quality time and building a professional
+            collaborative team of experts to help you reach your healthcare
+            goals, whether that is to live longer, be stronger physically and
+            mentally, or to feel and look your best.
           </p>
           <p>
-            When Jimmy isn't working, he loves spending time with his wife and German Shepherd, 
-            traveling, eating delicious food, attending music festivals, and rock climbing.
+            When Jimmy isn't working, he loves spending time with his wife and
+            German Shepherd, traveling, eating delicious food, attending music
+            festivals, and rock climbing.
           </p>
         </section>
 

@@ -20,11 +20,5 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
-    {
-      resolve: 'gatsby-plugin-anchor-links',
-      options: {
-        offset: 100,
-      },
-    },
   ],
 };
