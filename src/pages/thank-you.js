@@ -17,3 +17,14 @@ const IndexPage = () => (
 );
 
 export default IndexPage;
+
+export const Head = () => (
+  <>
+    <html lang="en" />
+    <title>Thank You | Rebeccah Rodriguez Regner, DO</title>
+    <meta
+      name="description"
+      content="Family Medicine & Sports Medicine Physician in Encinitas and San Diego CA"
+    />
+  </>
+);
